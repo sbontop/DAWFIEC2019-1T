@@ -11,4 +11,4 @@ It is a platform that consists of providing online tutoring focused for primary 
 - Video call between the tutor and the student
 - Flexibility of schedules when requesting a tutoring
 
-To see the design prototype of our app URMentoring visit [Moqups] (https://app.moqups.com/cc3wLnTo6Z/view).
+To see the design prototype of our app URMentoring visit [Moqups](https://app.moqups.com/cc3wLnTo6Z/view).
