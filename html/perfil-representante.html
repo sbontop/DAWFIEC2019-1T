@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Perfil Representante</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+</head>
+
+<body>
+
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area">
+        <div class="main_menu">
+            <div class="search_input" id="search_input_box">
+                <div class="container">
+                    <form class="d-flex justify-content-between" method="" action="">
+                        <input type="text" class="form-control" id="search_input" placeholder="Buscar...">
+                        <button type="submit" class="btn"></button>
+                        <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+                    </form>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light">  
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand-logo_h" href="index.html"><img src="../img/logo.png" alt="" width="169px" height="60px"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Cómo funciona</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sobre nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="login.html">Iniciar Sesión</a></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link search" id="search">
+                                    <i class="lnr lnr-magnifier"></i> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================ End Header Menu Area =================-->
+
+    <section class="bannner_area">   
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="banner_content text-center">
+                        <h2>Mi perfil</h2> 
+                        <div class="page_link">
+                            <a href="index.html">Home</a>
+                            <a href="courses.html">Courses</a>
+                            <a href="course-details.html">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="course_details_area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 course_details_left">
+                    <div class="blog_right_sidebar">
+                        <div class="single_instructor">
+                            <div class="author">
+                            <img src="../img/instructors/ins1.jpg" alt="">
+                            </div>
+                            <div class="author_decs">
+                                <h4>Martin Dunn</h4>
+                                <p class="profession">Contador</p>
+                                <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col-lg-7 right-contents">
+                    <h3 class="title">Tu Perfil Básico</h3>
+                    <ul>
+                        <li>
+                            <a class="justify-content-between d-flex" >
+                                <p>Nombre</p>
+                                <input type="text" class="or" value="Martin Dunn" readonly></input>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" >
+                                <p>Sexo</p>
+                                <select disabled >
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>                
+                                </select>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex">
+                                <p>Pais </p>
+                                <select disabled >
+                                    <option value="Ecuador">Ecuador</option>
+                                    <option value="Peru">Peru</option>
+                                    <option value="Colombia">Colombia</option>
+                                </select>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex">
+                                <p>Fecha de nacimiento </p>
+                                <span>15/05/1970</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex">
+                                <p>Representado </p>
+                                <span>Rose Dunn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justificar j-flex">
+                                <p>Telefono </p>
+                                <input type="text" class="or" value="0543436452" readonly></input>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="genric-btn success large">Editar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ Start footer Area  =================-->
+    <footer class="footer-area section_gap">
+        <div class="container">
+            <div class="row justify-content-center">        
+                <div class="col-lg-4 col-md-6 single-footer-widget">
+                    <h4 id="news">Newsletter</h4>
+                    <p>Recibir novedades acerca de nuestro servicio</p>
+                    <div class="form-wrap" id="mc_embed_signup">
+                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                         method="get" class="form-inline">
+                            <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'"
+                             required="" type="email">
+                            <button class="click-btn btn btn-default">
+                                <span>subscribirme</span>
+                            </button>
+                            <div style="position: absolute; left: -5000px;">
+                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                            </div>
+                            <div class="info"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                    <h4>Contáctanos</h4>
+                    <p>help@urmentoring.com</p>
+                    <p>1800-10969100</p>
+                </div>
+                <div class="col-lg-2 col-md-6 offset-md-2 single-footer-widget">
+                    <h4>Nuestra empresa</h4>
+                    <ul>
+                        <li><a href="#">Acerca de nosotros</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Términos de servicio</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 offset-md-2 single-footer-widget">
+                    <h4>Enlaces de interés</h4>
+                    <ul>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Mapa web</a></li>
+                        <li><a href="#">Quiero ser tutor</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr/>
+
+            <div class="row footer-bottom d-flex  between">
+                <p class="col-lg-8 col-sm-12 footer-text m-0 text-white text-center">Copyright © 2018 All rights reserved | This template is
+                    made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Colorlib</a></p>
+                <div class="col-lg-4 col-sm-12 footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--================ End footer Area  =================-->
+
+</body>
+</html>
