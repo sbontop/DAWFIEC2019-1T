@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="icon" href="../img/icon.png" type="image/png">
     <title>Detalles del tutor</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -29,7 +29,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">  
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand-logo_h" href="../index.html"><img src="../img/logo.png" alt="" width="169px" height="60px"></a>
+                    <a class="navbar-brand-logo_h" href="../index.html"><img src="../img/logo.png" alt="" width="70" height="70"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
@@ -39,17 +39,18 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item active"><a class="nav-link" href="../index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Cómo funciona</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Sobre nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="login.html">Iniciar Sesión</a></li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link search" id="search">
-                                    <i class="lnr lnr-magnifier"></i> 
-                                </a>
+                            <li class="nav-item active"><a class="nav-link" href="inicio-representante.html">Inicio</a></li>
+                            <li class="nav-item submenu dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutoria</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="agendar-tutoria.html">Planificar tutoria</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Seguimiento  de tutoria</a></li>
+                                </ul>
                             </li>
+                            <li class="nav-item"><a class="nav-link" href="detalles-tutor.html">Ver tutores</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Mensajes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="perfil-representante.html">Mi perfil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="login.html">Cerrar Sesión</a></li>
                         </ul>
                     </div>
                 </div>
@@ -59,25 +60,8 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <section class="banner_area">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>Detalles del tutor</h2>
-                            <p>  </p>
-                            <div class="page_link">
-                                <a href="../index.html">Home</a>
-                                <a href="courses.html">Courses</a>
-                                <a href="course-details.html">Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="gradient-bg titulo-principal">   
+        <h2 class="encabezado">Detalle de tutores</h2> 
     </section>
     <!--================End Home Banner Area =================-->
 
@@ -126,7 +110,7 @@
                         </aside>
                         <aside class="single_sidebar_widget popular_post_widget">
                             <h3 class="widget_title">Horarios disponibles</h3>
-                            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FGuayaquil&amp;src=aW84YnI3N2JhaDlxczl1MDNxbWp1ZzloM2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457&amp;showNav=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=1&amp;showTitle=0&amp;mode=WEEK" style="border-width:0" width=550" height="300" frameborder="0" scrolling="no"></iframe>
+                            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FGuayaquil&amp;src=aW84YnI3N2JhaDlxczl1MDNxbWp1ZzloM2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457&amp;showNav=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=1&amp;showTitle=0&amp;mode=WEEK" style="border-width:0" width="550" height="300"></iframe>
                             <div class="br"></div>
                         </aside>
 
@@ -341,37 +325,17 @@
 
     <!--================ Start footer Area  =================-->
     <footer class="footer-area section_gap">
-        <div class="container">
-            <div class="row justify-content-center">        
-                <div class="col-lg-4 col-md-6 single-footer-widget">
-                    <h4 id="news">Newsletter</h4>
-                    <p>Recibir novedades acerca de nuestro servicio</p>
-                    <div class="form-wrap" id="mc_embed_signup">
-                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                         method="get" class="form-inline">
-                            <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'"
-                             required="" type="email">
-                            <button class="click-btn btn btn-default">
-                                <span>subscribirme</span>
-                            </button>
-                            <div style="position: absolute; left: -5000px;">
-                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                            </div>
-                            <div class="info"></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <hr/>
-
+        <div class="container text-center text-md-left">
             <div class="row justify-content-center">
                 <div class="col-lg-2 col-md-6 single-footer-widget">
                     <h4>Contáctanos</h4>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>help@urmentoring.com</p>
                     <p>1800-10969100</p>
                 </div>
                 <div class="col-lg-2 col-md-6 offset-md-2 single-footer-widget">
                     <h4>Nuestra empresa</h4>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul>
                         <li><a href="#">Acerca de nosotros</a></li>
                         <li><a href="#">Políticas de privacidad</a></li>
@@ -380,25 +344,20 @@
                 </div>
                 <div class="col-lg-2 col-md-6 offset-md-2 single-footer-widget">
                     <h4>Enlaces de interés</h4>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul>
                         <li><a href="#">Preguntas frecuentes</a></li>
                         <li><a href="#">Mapa web</a></li>
                         <li><a href="#">Quiero ser tutor</a></li>
                     </ul>
                 </div>
-
-            </div>
-            <hr/>
-
-            <div class="row footer-bottom d-flex  between">
-                <p class="col-lg-8 col-sm-12 footer-text m-0 text-white text-center">Copyright © 2018 All rights reserved | This template is
-                    made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Colorlib</a></p>
-                <div class="col-lg-4 col-sm-12 footer-social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                    <a href="#"><i class="fa fa-behance"></i></a>
+                
+                <div class="footer-copyright text-center py-3">
+                Copyright © 2019 All rights reserved 
+                <a href="#"><img src="../img/f-icons/facebook.png" alt=""></a>
+                <a href="#"><img src="../img/f-icons/twitter.png" alt=""></a>
                 </div>
+
             </div>
         </div>
     </footer>

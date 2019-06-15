@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Representante</title>
+	<link rel="icon" href="../img/icon.png" type="image/png">
+	<title>Bienvenido representante</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../vendors/linericon/style.css">
@@ -27,7 +27,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light">  
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand-logo_h" href="../index.html"><img src="../img/logo.png" alt="" width="169px" height="60px"></a>
+					<a class="navbar-brand-logo_h" href="../index.html"><img src="../img/logoPrincipal.png" alt="" width="155" height="50"></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -37,17 +37,24 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="../index.html">Inicio</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Cómo funciona</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Sobre nosotros</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
-							<li class="nav-item"><a class="nav-link" href="login.html">Iniciar Sesión</a></li>
-							<li class="nav-item">
+							<li class="nav-item active"><a class="nav-link" href="inicio-representante.html">Inicio</a></li>
+							<!--<li class="nav-item"><a class="nav-link" href="#">Perfil del alumno</a></li> -->
+							<li class="nav-item submenu dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutoria</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="agendar-tutoria.html">Planificar tutoria</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Seguimiento  de tutoria</a></li>
+                                </ul>
+                            </li>
+							<li class="nav-item"><a class="nav-link" href="detalles-tutor.html">Ver tutores</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Mensajes</a></li>
+							<li class="nav-item"><a class="nav-link" href="perfil-representante.html">Mi perfil</a></li>
+							<li class="nav-item"><a class="nav-link" href="login.html">Cerrar Sesión</a></li>
+							<!-- <li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i> 
 								</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>
@@ -57,28 +64,17 @@
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
-	<section class="banner_area">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>Bienvenido al menu de representante</h2>
-                            <p>En esta seccion como un usuario representante usted tendra varias facilidades al separar una tutoria para su representado.<br><br>
-								Descubra cuales son los beneficios de haber ingresado como representante aqui:</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<section class="gradient-bg titulo-principal">   
+        <h2 class="encabezado">Bienvenido al menú representante</h2> 
     </section>
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start Feature Area =================-->
-
-
 	<section class="blog_categorie_area">
+		<div class = "container">
+			<h3 class="title">Beneficios como representante</h3>
+			<p>En esta sección como un usuario representante usted tendrá varias facilidades al separar una tutoría para su representado. Los beneficios de haber ingresado como representante son: </p>
+		</div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -86,11 +82,11 @@
                         <img src="../img/blog/cat-post/cat-post-2.jpg" alt="post">
                         <div class="categories_details">
                             <div class="categories_text">
-                                <a href="blog-details.html">
+                                <a href="tutor.html">
                                     <h5>Revisar el perfil del tutor</h5>
                                 </a>
                                 <div class="border_line"></div>
-                                <p>Puede conocer cual es la calificacion asignada al tutor de su preferencia, ademas de poder ver comentarios de otros alumnos.</p>
+                                <p>Puede conocer cual es la calificación asignada al tutor de su preferencia, además de poder ver comentarios de otros alumnos.</p>
                             </div>
                         </div>
                     </div>
@@ -100,7 +96,7 @@
                         <img src="../img/blog/cat-post/cat-post-5.jpg" alt="post">
                         <div class="categories_details">
                             <div class="categories_text">
-                                <a href="blog-details.html">
+                                <a href="agendar-tutoria.html">
                                     <h5>Agendar una tutoria</h5>
                                 </a>
                                 <div class="border_line"></div>
@@ -118,7 +114,7 @@
                                     <h5>Progreso del estudiante</h5>
                                 </a>
                                 <div class="border_line"></div>
-                                <p>Usted podra verificar cual es el progreso de su representado en la clase en la cual esta registrado accediendo al perfil del alumno en el cual vera un resumen.</p>
+                                <p>Usted podrá verificar cual es el progreso de su representado en la clase que está registrado accediendo al perfil del alumno.</p>
                             </div>
                         </div>
                     </div>
@@ -133,6 +129,19 @@
 	<div class="department_area section_gap">
 		<div class="container">
 			<div class="row align-items-center">
+				
+				<div class="offset-lg-1 col-lg-5">
+					<div class="dpmt_right">
+						<h1>Materias que puede reforzar</h1>
+						<p>Diversos tutores capacitados en distintas áreas brindarán tutorías mediante videollamadas.</p>
+						<p>Al momento de agendar una tutoría usted podra realizar la búsqueda de las materias disponibles al momento.</p>
+						<p>Usted podrá contactarse con el tutor para pedirle que tema desea que sea reforzado para su representado o puede buscarlo directamente en nuestra barra de búsqueda rápida.</p>
+						<div id="options-representante">
+							<a href="agendar-tutoria.html" class="primary-btn text-uppercase">Agendar tutoria</a>
+						</div>
+					</div>
+				</div>
+
 				<div class="col-lg-6">
 					<div class="dpmt_courses">
 						<div class="row">
@@ -151,7 +160,7 @@
 									<div class="dpmt_icon">
 										<img src="../img/dpmt/icon2.png" alt="">
 									</div>
-									<h4>Matematicas</h4>
+									<h4>Matemáticas</h4>
 								</div>
 							</div>
 							<!-- single course -->
@@ -169,7 +178,7 @@
 									<div class="dpmt_icon">
 										<img src="../img/dpmt/icon4.png" alt="">
 									</div>
-									<h4>Informatica</h4>
+									<h4>Informática</h4>
 								</div>
 							</div>
 							<!-- single course -->
@@ -178,7 +187,7 @@
 									<div class="dpmt_icon">
 										<img src="../img/dpmt/icon9.png" alt="">
 									</div>
-									<h4>Quimica</h4>
+									<h4>Química</h4>
 								</div>
 							</div>
 							<!-- single course -->
@@ -187,23 +196,14 @@
 									<div class="dpmt_icon">
 										<img src="../img/dpmt/icon8.png" alt="">
 									</div>
-									<h4>Fisica</h4>
+									<h4>Física</h4>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="offset-lg-1 col-lg-5">
-					<div class="dpmt_right">
-						<h1>Materias que puede reforzar</h1>
-						<p>Diversos tutores capacitados en distintas areas brindaran tutorias mediante videollamadas.</p>
-						<p>Al momento de agendar una tutoria usted podra realizar la busqueda de las materias disponibles al momento.</p>
-						<p>Usted podra contactarse luego con el tutor para pedirle en tema en especifico que desea que sea reforzado para su representado o puede buscarlo directamente en nuestra barra de busqueda rapida.</p>
-						<a href="agendar-tutoria.html" class="primary-btn text-uppercase">Agendar tutoria</a>
-						<a href="perfil-representante.html" class="primary-btn text-uppercase">Ver mi perfil</a>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -211,86 +211,59 @@
 
 		<!--================ Start footer Area  =================-->
 	<footer class="footer-area section_gap">
-		<div class="container">
-			<div class="row justify-content-center">		
-				<div class="col-lg-4 col-md-6 single-footer-widget">
-					<h4 id="news">Newsletter</h4>
-					<p>Recibir novedades acerca de nuestro servicio</p>
-					<div class="form-wrap" id="mc_embed_signup">
-						<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-						 method="get" class="form-inline">
-							<input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'"
-							 required="" type="email">
-							<button class="click-btn btn btn-default">
-								<span>subscribirme</span>
-							</button>
-							<div style="position: absolute; left: -5000px;">
-								<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-							</div>
-							<div class="info"></div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<hr/>
+        <div class="container text-center text-md-left">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                    <h4>Contáctanos</h4>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>help@urmentoring.com</p>
+                    <p>1800-10969100</p>
+                </div>
+                <div class="col-lg-2 col-md-6 offset-md-2 single-footer-widget">
+                    <h4>Nuestra empresa</h4>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <ul>
+                        <li><a href="#">Acerca de nosotros</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Términos de servicio</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 offset-md-2 single-footer-widget">
+                    <h4>Enlaces de interés</h4>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <ul>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Mapa web</a></li>
+                        <li><a href="#">Quiero ser tutor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-copyright text-center py-3">
+                Copyright © 2019 All rights reserved 
+                <a href="#"><img src="../img/f-icons/facebook.png" alt=""></a>
+                <a href="#"><img src="../img/f-icons/twitter.png" alt=""></a>
+                </div>
 
-			<div class="row justify-content-center">
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Contáctanos</h4>
-					<p>help@urmentoring.com</p>
-					<p>1800-10969100</p>
-				</div>
-				<div class="col-lg-2 col-md-6 offset-md-2 single-footer-widget">
-					<h4>Nuestra empresa</h4>
-					<ul>
-						<li><a href="#">Acerca de nosotros</a></li>
-						<li><a href="#">Políticas de privacidad</a></li>
-						<li><a href="#">Términos de servicio</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 offset-md-2 single-footer-widget">
-					<h4>Enlaces de interés</h4>
-					<ul>
-						<li><a href="#">Preguntas frecuentes</a></li>
-						<li><a href="#">Mapa web</a></li>
-						<li><a href="#">Quiero ser tutor</a></li>
-					</ul>
-				</div>
-
-			</div>
-			<hr/>
-
-			<div class="row footer-bottom d-flex  between">
-				<p class="col-lg-8 col-sm-12 footer-text m-0 text-white text-center">Copyright © 2018 All rights reserved | This template is
-					made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Colorlib</a></p>
-				<div class="col-lg-4 col-sm-12 footer-social">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-dribbble"></i></a>
-					<a href="#"><i class="fa fa-behance"></i></a>
-				</div>
-			</div>
-		</div>
-	</footer>
+            </div>
+        </div>
+    </footer>
 	<!--================ End footer Area  =================-->
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/countdown.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/owl-carousel-thumb.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="vendors/counter-up/jquery.counterup.js"></script>
-	<script src="js/mail-script.js"></script>
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/popper.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/stellar.js"></script>
+	<script src="../vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="../js/owl-carousel-thumb.min.js"></script>
+	<script src="../js/jquery.ajaxchimp.min.js"></script>
+	<script src="../vendors/counter-up/jquery.counterup.js"></script>
+	<script src="../js/mail-script.js"></script>
 	<!--gmaps Js-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
+	<script src="../js/gmaps.min.js"></script>
+	<script src="../js/theme.js"></script>
 </body>
-
 </html>

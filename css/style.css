@@ -27,8 +27,8 @@ theme.
 body {
   line-height: 25px;
   font-size: 16px;
-  font-family: 'Noto Sans HK', sans-serif;
-  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  /*font-weight: 600; Noto Sans HK*/
   color: #777777; }
 
 h1,
@@ -90,10 +90,10 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
-  padding: 60px 0px 0px 0px;; }
+  padding: 50px 0;; }
   @media (max-width: 991px) {
     .section_gap {
-      padding: 60px 0px 0px 0px; } }
+      padding: 20px 0; } }
 
 .section_gap_top {
   padding-top: 120px; }
@@ -171,11 +171,7 @@ button:focus {
 ============================================================================================ */
 .primary-btn {
   display: inline-block;
-  background: -webkit-linear-gradient(to right, #38B6FF 0%, #9DDBFF 51%, #38B6FF 100%);
-  background: -moz-linear-gradient(to right, #38B6FF 0%, #9DDBFF 51%, #38B6FF 100%);
-  background: -ms-linear-gradient(to right, #38B6FF 0%, #9DDBFF 51%, #38B6FF 100%);
-  background: -o-linear-gradient(to right, #38B6FF 0%, #9DDBFF 51%, #38B6FF 100%);
-  background: linear-gradient(to right, #38B6FF 0%, #9DDBFF 51%, #38B6FF 100%);
+  background-color: #38b6ff;
   background-size: 200% auto;
   padding: 0px 38px;
   color: #fff;
@@ -185,7 +181,6 @@ button:focus {
   line-height: 50px;
   border-radius: 0px;
   outline: none !important;
-  box-shadow: 0px 20px 50px rgba(0, 175, 224, 0.3);
   text-align: center;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
@@ -228,7 +223,7 @@ padding: 10px;}
   transition: background 0.4s, all 0.3s linear; } 
   .header_area .navbar {
     background-color: transparent; 
-    padding: 0px;
+    /*padding: 0px;*/
     border: 0px;
     border-radius: 0px; }
     .header_area .navbar .nav .nav-item {
@@ -753,7 +748,7 @@ padding: 10px;}
   font-size: 21px;
   border: none;
   cursor: pointer;
-  margin-top: 40px;
+  margin-top: 25px;
   border-bottom: 1px solid #eeeeee;
   position: relative;
   padding-bottom: 10px;
@@ -765,7 +760,7 @@ padding: 10px;}
     bottom: -1px;
     height: 1px;
     width: 74px;
-    background: #4dbf1c; }
+    background: #38b6ff; }
 
 .course_details_left .course_list {
   margin-bottom: 0; }
@@ -794,7 +789,7 @@ padding: 10px;}
 
 @media (max-width: 991px) {
   .right-contents {
-    margin-top: 50px; } }
+    /*margin-top: 50px;*/ } }
 .right-contents ul {
   padding-left: 0; }
   .right-contents ul li {
@@ -851,6 +846,8 @@ padding: 10px;}
     .right-contents .feedeback textarea:focus {
       box-shadow: none; }
 .right-contents .star .checked {
+  color: #4dbf1c; }
+  .star .checked {
   color: #4dbf1c; }
 .right-contents .comments-area {
   padding: 0;
@@ -1051,8 +1048,8 @@ padding: 10px;}
 
 /*========= blog_categorie_area css ===========*/
 .blog_categorie_area {
-  padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .categories_post {
   position: relative;
@@ -2005,12 +2002,12 @@ h6 {
 
 .genric-btn.success {
   color: #fff;
-  background: #4cd3e3;
+  background: #38b6ff;
   border: 1px solid transparent; }
 
 .genric-btn.success:hover {
-  color: #4cd3e3;
-  border: 1px solid #4cd3e3;
+  color: #38b6ff;
+  border: 1px solid #38b6ff;
   background: #fff; }
 
 .genric-btn.success-border {
@@ -2981,7 +2978,7 @@ h6 {
 
   .header_area + section, .header_area + row, .header_area + div {
     margin-top: 0px;
-    padding-top: 71px; }
+    padding-top: 115px; }
 
   .header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
     line-height: 40px; }
@@ -3084,7 +3081,7 @@ h6 {
 
   .header_area + section, .header_area + row, .header_area + div {
     margin-top: 0px;
-    padding-top: 71px; }
+    /*padding-top: 71px;*/ }
 
     /* Home Banner Area css
 	============================================================================================ */
@@ -3218,7 +3215,7 @@ hr {border-color: #38b6ff}
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  /*margin: 8px 0;*/
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -3383,4 +3380,36 @@ body {
 
 .form-select-perfil-basico {
   white-space: nowrap;
+}
+
+/*Banner color degradado*/
+.titulo-principal {
+  text-align: center; 
+  padding: 2% 2% 2% 2%;
+}
+
+.titulo-principal .encabezado{
+  font-weight: bold;
+  font-size: 35px;
+  color: white;
+} 
+
+div#options-representante{
+  display: block;
+  padding: 5% 2% 5% 2%;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
+
+a div#options-representante{
+  align-self: center;
+}
+
+div.categories_text:hover{
+  cursor: pointer;
+}
+
+.desc{
+  padding-bottom: 7px;
 }
