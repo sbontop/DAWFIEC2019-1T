@@ -5,48 +5,56 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="../img/iconoFondo.png" type="image/png">
-    <title>Login</title>
+    <link rel="icon" href="../img/icon.png">
+    <title>Iniciar Sesión</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="vendors/linericon/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- main css -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body id="loginFormulario">
+    <div class="container" >
+         <form action="login.html" id="log">
+            <div class="imgcontainer">
+                <img src="../img/logo.png"  alt="LOGO here" width="120" height="120">
+                <h3>Iniciar Sesión</h3>
+            </div>
 
-    <form action="login.html" id="log">
-        <div class="imgcontainer">
-            <img src="../img/logo.png" type="image/png" alt="LOGO here" width="120" height="120">
-        </div>
+            <div class="row justify-content-center">    
+                 <div class="form-group">
+                    <input id="email" type="text" class="form-control" placeholder="usuario" name="uname" required>
+                     </div>
+            </div>
 
-        <div class="cont-login">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <div class="row justify-content-center">    
+                 <div class="form-group">
+                   <input type="password" class="form-control" placeholder="contraseña" name="psw" required>
+                   <label>
+                    <input type="checkbox" checked="checked" name="remember"> Recordarme
+                   </label>
+                 </div>
+            </div>
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-            <button type="submit" id="blogin">Login</button>
-            <div id="login-btns">
-                <a href="inicio-representante.html" class="genric-btn primary radius">Login representante</a>
-                <a href="tutor.html" class="genric-btn success radius">Login tutor</a>
-                <a href="perfil-estudiante.html" class="genric-btn info radius">Login estudiante</a>
+            <div class="row justify-content-center">    
+                 <div class="form-group">
+                    <button type="submit" class="form-control" id="blogin">Ingresar</button>
+                    
+                 </div>
+            </div>
+
+            <div class="row justify-content-center">    
+                 <div class="form-group">
+                   <span class="psw">¿Olvidaste tu <a id="linkPass" href="#">contraseña?</a></span>
+                 </div>
             </div>
             
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-        </div>
+        </form> 
+    </div>
 
-        <div class="cont-login" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-    </form>
+    <footer id="tempFot">
+        <a href="inicio-representante.html">Vista Representante |</a>
+        <a href="tutor.html">Vista tutor |</a>
+        <a href="perfil-estudiante.html">Vista estudiante</a>
+    </footer>
 </body>

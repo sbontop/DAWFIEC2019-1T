@@ -47,6 +47,7 @@ h6 {
   padding: 0px; }
 
 a {
+  color: #39008b;
   text-decoration: none;
   transition: all 0.3s ease-in-out; }
   a:hover, a:focus {
@@ -3168,7 +3169,7 @@ h6 {
 /* =================================== */
 /*  Footer Styles
 /* =================================== */
-hr {border-color: #38b6ff}
+hr {border-color: #38b6ff; border-width: 3px;}
        #news {
         font-size: 36px;
         text-align: center; } 
@@ -3206,82 +3207,28 @@ hr {border-color: #38b6ff}
 /*---------------------------------------------------- */
 
 /*======================LOGIN==================*/
-/* Bordered form */
-#log{
-  border: 3px solid #f1f1f1;
-}
-
-/* Full-width inputs */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  /*margin: 8px 0;*/
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-#blogin{
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-
-}
-
-
-/* Add a hover effect for buttons */
-button:hover {
-  opacity: 0.8;
-}
-
-/* Extra style for the cancel button (red) */
-.cancelbtn {  
-  border: none;
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
+#loginFormulario{
+ background-color:  #f1f1f1;
+ margin-top: 80px;
 }
 
 /* Center the avatar image inside this container */
 .imgcontainer {
+  position: relative;
   text-align: center;
   margin: 24px 0 12px 0;
 }
-
-/* Avatar image */
-img.avatar {
-  width: 20%;
-}
-
-
-/*    MODIFICAR 
-.container {
-  padding: 16px;
-}
-*/
+ #blogin{
+padding-left: 88px;
+padding-right: 88px;
+background-color: #38b6ff;
+color: white;
+ }
 
 
-/* The "Forgot password" text */
-span.psw {
-  float: right;
-  padding-top: 10px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-  .cancelbtn {
-    width: 100%;
-  }
-}
-
+ #tempFot{
+  text-align: center;
+ }
 /*==============================PERFIL ESTUDIANTE============================*/
 /* MODIFICAR
 * {
@@ -3413,3 +3360,141 @@ div.categories_text:hover{
 .desc{
   padding-bottom: 7px;
 }
+
+/*=====================Contactanos=======================*/
+
+.area_formulario {
+  z-index: 1;
+  min-height: 200px;
+  display: flex;
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner/Banner1.jpg) no-repeat scroll center; }
+
+.area_formulario .banner_formulario {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: flex; }
+
+.area_formulario .banner_formulario .container {
+      vertical-align: middle;
+      align-self: center; }
+    .area_formulario .banner_formulario .contenido_formulario {
+      color: #fff; }    
+
+
+.area_formulario .contenido_formulario h2{
+        color: white;
+        margin-bottom: 20px;
+}
+
+.area_formulario .contenido_formulario h4{
+        color: darkgray;
+        margin-bottom: 8px;
+         margin-top: 8px;
+}
+
+.registro{
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+#formularioEnviar{
+background: #38b6ff;
+      background-size: 200% auto;
+      border-radius: 0;
+      color: #fff;
+      left: 60px;
+      padding: 10px 35px;
+      border: 0;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; 
+}
+
+
+  /*=====================Contactanos=======================*/
+
+
+/*================ Acerca de nosotros =================*/
+
+.cont_nosotros{
+ z-index: 1;
+  display: flex;
+  min-height: 200px;
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../img/banner/bannerk.jpg) no-repeat scroll center; 
+  margin-bottom: 30px;}
+
+  @media (max-width: 576px) {
+    .cont_nosotros{
+      margin-bottom: 10px;
+    }
+    .cont_nosotros h2{
+       margin-top: 45px;
+       margin-bottom: 0px;
+           font-size: 30px;
+    }
+  }
+
+.cont_nosotros .banner_nosotros {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: flex; }
+
+
+.carta{
+    margin-bottom: 60px;
+}
+
+ .cont_nosotros h2{
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+}
+
+.desarrollador{
+    margin-bottom: 20px;
+    background: #F9F9F9;
+}
+
+.parteTexto{
+  padding: 30px 20px 20px 60px;
+}
+
+.parteImagen{
+ padding: 30px 20px 80px;
+}
+
+.desarrollador h3{
+ color: #39008b;
+}
+
+.desarrollador hr{
+  width: 300px;
+  border-width: 3px;
+}
+ .imagen img:hover, img:focus{
+        transform: scale(1.1);
+        -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+ }
+
+ @media (max-width: 576px) {
+    .parteImagen{
+ padding: 30px 20px 30px;
+      }
+      .parteTexto{
+  padding: 20px 20px 20px 60px;
+}
+}
+
+
+/*================ Area de información =================*/
