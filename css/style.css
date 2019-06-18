@@ -3498,3 +3498,20 @@ background: #38b6ff;
 
 
 /*================ Area de información =================*/
+
+
+/*================ Novedades =====================*/
+#titulon{
+margin-bottom: 25px;
+text-align: center;
+}
+
+#titulon #aprender{
+color: white;
+}
+
+#news{
+  background-color: #f1f1f1;
+}
+
+/*================ Novedades =====================*/
