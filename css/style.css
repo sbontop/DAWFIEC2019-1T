@@ -3416,6 +3416,14 @@ background: #38b6ff;
       transition: all 0.3s ease 0s; 
 }
 
+#mapid {
+    height: 380px;
+}
+
+.formulario{
+  padding-top: 10px;
+  background-color: #E1DFE3;
+}
 
   /*=====================Contactanos=======================*/
 
