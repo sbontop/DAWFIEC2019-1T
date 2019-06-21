@@ -3507,6 +3507,84 @@ background: #38b6ff;
 
 /*================ Area de información =================*/
 
+/*================ como funciona  =================*/
+.banner_final{
+ background-color: #FFD92D;
+ padding-top: 25px;
+ padding-bottom: 25px;
+ margin-top: 20px;
+  position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+    display: flex; }
+
+
+.cont_lista{
+
+  background-color: #E8F6FC ;/**/
+}
+
+.frecuentes .container{
+
+  margin-bottom: 25px;
+}
+
+.cont{
+  margin-top: 5px;
+ padding: 15px 15px 15px 15px;
+}
+
+.cont_lista h2{
+text-align: center;
+
+}
+.cont_lista .row{
+margin-top: 25px;
+
+}
+
+.cont_lista .row .col h3{
+margin-top:  25px;
+}
+
+.cont_funcion{
+  background-color: #F0E8FC;
+}
+
+.text_frec{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.cont_preguntas{
+  margin-top: 25px;
+}
+
+.frecuentes h2{
+
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+.frecuentes{
+margin-top: 20px;
+margin-bottom: 50px;
+
+}
+
+.frecuentes .container{
+margin-bottom: 25px;
+
+}
+
+.btn-link{
+color: #39008b;
+
+}
+
+/*================ como funciona =================*/
 
 /*================ Novedades =====================*/
 #titulon{
