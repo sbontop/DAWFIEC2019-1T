@@ -3602,8 +3602,9 @@ color: white;
 
 
 
+/********** Inicio - Panel Administrador **********/
 #sidebar {
-    width: 190px;
+    width: 210px;
     height: 100%;
     position: fixed;
     background: #39008b;
@@ -3627,7 +3628,7 @@ color: white;
 }
 
 #main-content {
-    margin-left: 210px;
+    margin-left: 220px;
 }
 
 .header {
@@ -3639,12 +3640,12 @@ color: white;
 
 .black-bg {
     background: #FFFFFF;
-    border-bottom: 1px solid #c9aa5f;
+    border-bottom: 1px solid #FFD92D;
 }
 .notify-row {
-    float: left;
+    float: right;
     margin-top: 15px;
-    margin-left: 92px;
+    margin-left: 190px;
 }
 
 .notify-row .notification span.label {
@@ -3687,7 +3688,7 @@ ul.top-menu > li > a {
     border-radius: 4px;
     -webkit-border-radius: 4px;
     border:1px solid #666666 !important;
-    padding: 2px 6px;
+    padding: 7px 12px;
     margin-right: 15px;
 }
 
@@ -3732,19 +3733,20 @@ ul.top-menu > li > .logout {
   border-radius: 4px;
   -webkit-border-radius: 4px;
   border: 1px solid #64c3c2 !important;
-  padding: 5px 15px;
+  padding: 10px 20px 10px 20px;
   margin-right: 15px;
   background: #68dff0;
   margin-top: 15px;
 }
 
-ul.sidebar-menu , ul.sidebar-menu li ul.sub{
-    margin: -2px 0 0;
+ul.sidebar-menu{
+    margin: 100px 0 0;
     padding: 0;
 }
 
-ul.sidebar-menu {
-    margin-top: 75px;
+ul.sidebar-menu li ul.sub{
+    margin: -2px 0 0;
+    padding: 0;
 }
 
 ul.sidebar-menu li ul.sub li{
@@ -3855,12 +3857,10 @@ ul.sidebar-menu li a.active i {
 }
 .header, .footer {
     min-height: 65px;
-    padding: 0 15px;
+    padding: 20px 10px 20px 10px;
 }
 
-#top_menu .nav > li, ul.top-menu > li {
-    float: left;
-}
+
 
 .top-nav ul.top-menu > li .dropdown-menu.logout {
     width: 268px !important;
@@ -3925,7 +3925,7 @@ ul.sidebar-menu li a.active i {
   margin-top: 25px;
 }
 .active .dcjq-icon {
-    background: url("../img/nav-expand.png") no-repeat bottom;
+    /*background: url("../img/nav-expand.png") no-repeat bottom;*/
     border-radius:3px;
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
@@ -3944,10 +3944,10 @@ ul.sidebar-menu li a.active i {
 } 
 
 a.logo {
-    font-size: 20px;
+    font-size: 15px;
     color: #ffffff;
     float: left;
-    margin-top: 15px;
+    margin-top: 10px;
     text-transform: uppercase;
 }
 
@@ -4009,19 +4009,19 @@ a.logo span {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
-    padding-top: 0px;
+    padding-top: 60px;
     width: 100%;
 }
 
 .main-chart {
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 /* Dash Side */
 
 .ds {
   background: #ffffff;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 .ds h4 {
@@ -4083,10 +4083,19 @@ a.logo span {
   color: #68dff0;
 }
 
+div.row.mtbox {
+  text-align: center;
+  display: flex;
+  clear: both;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
 .mtbox {
-  margin-top: 80px;
+  margin-top: 0px;
   margin-bottom: 40px;
 }
+
 .box0:hover .box1 {
   border-bottom: 1px solid #ffffff;
 }
@@ -4094,15 +4103,16 @@ a.logo span {
 .box0 p {
   text-align: center;
   font-size: 12px;
-  color: #f2f2f2;
+  color: #FFFFFF;
 }
 
 .box0:hover p {
-  color: #ff865c;
+  color: #000000;/*#39008b;*/
+  padding-top: 5px;
 }
 
 .box0:hover {
-  background: #ffffff;
+  background: #FFD92D;/*#68dff0;*/
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 .box1 {
@@ -4277,6 +4287,15 @@ a.logo span {
   padding: 10px;
 }
 
+/* Calendar Configuration */
+#calendar {
+  color: white;
+  padding: 0px !important;
+}
+.calendar-month-header {
+  background: #43b1a9;
+}
+
 .drop-after {
   padding-top: 15px;
   margin-top: 15px;
@@ -4376,5 +4395,87 @@ a.logo span {
     padding: 0 10px;
     width: 40px;
 }
+
+.tituloA{
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.encabezado-admin{
+  margin-top: 125px;
+}
+
+h2.cabecera {
+  display: none;
+}
+
+/*Green Panel*/
+.green-panel {
+  text-align: center;
+  background: #68dff0;
+}
+.green-panel .green-header {
+  background: #43b1a9;
+  padding: 3px;
+  margin-bottom: 15px;
+}
+.green-panel h5 {
+  color: white;
+  font-weight: 200;
+  margin-top: 10px;
+}
+.green-panel h3 {
+  color: white;
+  font-weight: 100;
+}
+.green-panel p {
+  color: white;
+}
+
+/*Content Panel*/
+.content-panel {
+  background: #ffffff;
+  box-shadow: 0px 3px 2px #aab2bd;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.content-panel h4 {
+  margin-left: 10px;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+/*footer*/
+.site-footer {
+    background: #f4f4f4;
+    color: #000000;
+    padding: 10px 0;
+}
+
+
+.go-top {
+    margin-right: 1%;
+    float: right;
+    background: rgba(255,255,255,.5);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.go-top i {
+    color: #2A3542;
+}
+
+.site-min-height {
+    min-height: 900px;
+}
+
+
+
+/********** Fin - Panel Administrador **********/
 
 /*================ Novedades =====================*/
