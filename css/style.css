@@ -3498,3 +3498,11 @@ background: #38b6ff;
 
 
 /*================ Area de información =================*/
+
+
+/*=================Perfil de Estudiante===================*/
+.subnav-link {
+  color: white !important;
+  padding-left: 5em;
+  padding-right: 5em;
+}
