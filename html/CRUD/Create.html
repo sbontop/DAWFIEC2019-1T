@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <title>Materias</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../../img/icon.png" type="image/png">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/toastr.css">
+    <link rel="stylesheet" href="../../css/application.css">
+    <!-- Custom styles for this template -->
+    <link href="../../css/style.css" rel="stylesheet">
+    <!--  <link href="../css/style-admin.css" rel="stylesheet"> -->
+    <link href="../../css/style-responsive.css" rel="stylesheet">
+
+      <link href="../../css/font-awesome.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--================ Start Header Menu Area =================-->
+    <header class="header black-bg">
+        <div class="sidebar-toggle-box">
+            <div class="fa fa-bars tooltips" data-placement="right"></div>
+        </div>
+        <!--logo start-->
+        <a class="logo" href="../index-admin.html"><b><img src="../../img/logoPrincipal.png" alt="" width="155" height="50"></b></a>
+        <!--logo end-->
+        <div class="nav notify-row" id="top_menu">
+            <!--  notification start -->
+            <ul class="nav top-menu">
+                <!-- settings start -->
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown" href="index.html#">
+                        <i class="fa fa-tasks"></i>
+                        <span class="badge bg-theme">4</span>
+                    </a>
+                </li>
+                <!-- settings end -->
+                <!-- inbox dropdown start-->
+                <li id="header_inbox_bar" class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown" href="index.html#">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="badge bg-theme">5</span>
+                    </a>
+                </li>
+                <!-- inbox dropdown end -->
+            </ul>
+            <!--  notification end -->
+            <ul class="nav pull-right top-menu">
+                <li><a class="logout" href="../login.html">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--================ End Header Menu Area =================-->
+
+
+    <!--sidebar start-->
+    <aside>
+          <div id="sidebar"  class="nav-collapse">
+              <!-- sidebar menu start-->
+                 
+              <ul class="sidebar-menu" id="nav-accordion">
+                  <li class="encabezado-admin">
+                    <p class="centered" href="perfil-administrador.html"><img src="../../img/admin/worker.png" class="img-circle" width="60" alt="admin"></p> 
+                    <p class="tituloA">Administrador</p>
+                  </li>
+                  <li class="mt">
+                      <a href="../index-admin.html">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Mi Panel</span>
+                      </a>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Perfil</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="../perfil-administrador.html">Editar perfil</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-user"></i>
+                          <span>Usuarios</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="#">Agregar</a></li>
+                          <li><a  href="#">Ver</a></li>
+                          <li><a  href="#">Modificar</a></li>
+                          <li><a  href="#">Eliminar</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-tasks"></i>
+                          <span>Formularios</span>
+                      </a>
+                  </li>
+                  <li class="sub-menu">
+                      <a class="active" href="javascript:;" >
+                          <i class="fa fa-th"></i>
+                          <span>Materias</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="Read.html">Buscar</a></li>
+                          <li><a  href="Create.html">Agregar</a></li>
+                          <li><a  href="Update.html">Modificar</a></li>
+                          <li><a  href="Delete.html">Eliminar</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class=" fa fa-bar-chart-o"></i>
+                          <span>Estadísticas</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="#">Tutores</a></li>
+                          <li><a  href="#">Estudiantes</a></li>
+                      </ul>
+                  </li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+    <!--sidebar end-->
+    
+    <section id="main-content">
+      <h2 class="cabecera">Encabezado </h2>
+      <section class="wrapper">
+        <div class="row">
+          <div class="col-lg-12 main-chart">
+            <div class="gradient-bg titulo-principal">   
+              <h2 class="encabezado">Agregar Materias</h2> 
+            </div>
+            <div class="content" ng-controller="ListaComprasController">          
+              <aside class="single_sidebar_widget search_widget">
+                <div class="input-group">
+                  <input type="search" ng-model="search" class="form-control" placeholder="Ingrese nombre de materia que desea buscar">
+                </div>
+                <form class="form-inline" name="validarValoresPreenchidos">
+                  <input type="text1" ng-model="item.codigo" placeholder="Código" class="input-small" required>
+                  <input type="text1" ng-model="item.materia" placeholder="Materia" class="input-small" required>
+                  <input type="text1" ng-model="item.descripcion" placeholder="Descripción" required>
+                  
+                  <button ng-hide="edit" class="btn btn-success" ng-disabled="validarValoresPreenchidos.$invalid" ng-click="
+                  adicionaItem()">
+                    <i class="fa fa-plus"></i> agregar
+                  </button>
+                </form>
+                <table id="lista" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Código</th>
+                      <th>Materia</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="item in lista | filter:search">
+                      <td type="ng-binding" ng-model="item.codigo"><strong>{{ item.codigo }}</strong></td>
+                      <td>{{ item.materia }}</td>
+                      <td>{{ item.descripcion }}</td>
+                    </tr>
+                  </tbody>
+                </table>  
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--footer start-->
+      <footer class="site-footer">
+        <div class="text-center">
+          2019 - URMentoring
+          <a href="#" class="go-top">
+              <i class="fa fa-angle-up"></i>
+          </a>
+        </div>
+      </footer> 
+      <!--footer end-->                    
+    </section>
+    
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-1.8.3.min.js"></script> 
+    <!-- <script src="../js/jquery-3.2.1.min.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+    <script src="../../js/popper.js" ></script>
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <script class="include" src="../../js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="../../js/jquery.scrollTo.min.js"></script>
+    <script src="../../js/jquery.nicescroll.js"></script>
+    <script src="../../js/jquery.sparkline.js"></script>
+
+    <script src="../../js/gritter-conf.js"></script>
+
+    <script src="../../js/angular.min.js"></script>
+    <script src="../../js/toastr.min.js"></script>
+    <script src="../../js/controllers.js"></script>
+    <script src="../../js/common-scripts.js"></script>
+  </body>
+</html>
