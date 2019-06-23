@@ -12,9 +12,8 @@
     <!--  <link href="../css/style-admin.css" rel="stylesheet"> -->
     <link href="../../css/style-responsive.css" rel="stylesheet">
 
-    <link href="../../css/font-awesome.min.css" rel="stylesheet" />
+      <link href="../../css/font-awesome.min.css" rel="stylesheet" />
   </head>
-
   <body>
     <!--================ Start Header Menu Area =================-->
     <header class="header black-bg">
@@ -52,6 +51,7 @@
     </header>
     <!--================ End Header Menu Area =================-->
 
+
     <!--sidebar start-->
     <aside>
           <div id="sidebar"  class="nav-collapse">
@@ -68,6 +68,7 @@
                           <span>Mi Panel</span>
                       </a>
                   </li>
+
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-desktop"></i>
@@ -123,7 +124,7 @@
           </div>
       </aside>
     <!--sidebar end-->
-      
+    
     <section id="main-content">
       <h2 class="cabecera">Encabezado </h2>
       <section class="wrapper">
@@ -132,13 +133,11 @@
             <div class="gradient-bg titulo-principal">   
               <h2 class="encabezado">Buscar Materias</h2> 
             </div>
-
-            <div class="content" ng-controller="ListaMateriasController">          
+            <div id="cns" class="content" ng-controller="ListaMateriasController">          
               <aside class="single_sidebar_widget search_widget">
                 <div class="input-group">
                   <input type="search" ng-model="search" class="form-control" placeholder="Ingrese nombre de materia que desea buscar">
-                </div>    
-                  
+                </div>
                 <table id="lista" class="table table-striped">
                   <thead>
                     <tr>
@@ -155,7 +154,6 @@
                     </tr>
                   </tbody>
                 </table>  
-
               </aside>
             </div>
           </div>
@@ -163,18 +161,19 @@
       </section>
       <!--footer start-->
       <footer class="site-footer">
-          <div class="text-center">
-            2019 - URMentoring
-            <a href="#" class="go-top">
-                <i class="fa fa-angle-up"></i>
-            </a>
-          </div>
+        <div class="text-center">
+          2019 - URMentoring
+          <a href="#" class="go-top">
+              <i class="fa fa-angle-up"></i>
+          </a>
+        </div>
       </footer> 
-      <!--footer end-->
+      <!--footer end-->                    
     </section>
     
     <script src="../../js/jquery.js"></script>
     <script src="../../js/jquery-1.8.3.min.js"></script> 
+    <!-- <script src="../js/jquery-3.2.1.min.js"></script>-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
     <script src="../../js/popper.js" ></script>
     <script src="../../js/bootstrap.min.js"></script>
