@@ -9,9 +9,10 @@
 	<title>URMentoring</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+	<!--Intro JS-->
+	<link rel="stylesheet" type="text/css" href="css/introjs.css" />
 </head>
 
 <body>
@@ -35,8 +36,8 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Cómo funciona</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
+							<li class="nav-item" data-position="right" data-intro="¿Te interesó URMentoring? Descubre más aquí" data-step="5"><a class="nav-link" href="html/comoFunciona.html">Cómo funciona</a></li>
+							<li class="nav-item"><a class="nav-link" href="html/novedades.html">Novedades</a></li>
 							<li class="nav-item"><a class="nav-link" href="html/sobreNosotros.html">Sobre nosotros</a></li>
 							<li class="nav-item"><a class="nav-link" href="html/contactanos.html">Contáctanos</a></li>
 							<li class="nav-item"><a class="nav-link" href="html/login.html">Iniciar Sesión</a></li>
@@ -63,7 +64,7 @@
 							<h2>nunca fue tan fácil</h2>					
 							<p>URMentoring es una plataforma de tutorías académicas que proporciona un espacio virtual para que estudiantes de primaria y secundaria puedan interactuar con tutores calificados que les ayuden a reforzar temas de estudio</p>
 							<div class="search_course_wrap">
-									<button type="submit" class="btn search_course_btn">Comienza Ahora</button>
+									<button type="submit" class="btn search_course_btn" onclick="javascript:introJs().setOptions({ 'skipLabel': 'Saltar', 'nextLabel': 'Siguiente', 'prevLabel': 'Anterior', 'doneLabel': 'Finalizar'}).start();">Comienza Ahora</button>
 							</div>
 						</div>
 					</div>
@@ -80,12 +81,12 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
-					<div class="main_title">
+					<div class="main_title" data-position="right" data-intro="URMentoring te ofrece varios servicios" data-step="1">
 						<h2>¿Qué ofrecemos?</h2>
 					</div>
 				</div>
 			</div>
-			<div class="row align-items-center">
+			<div class="row align-items-center" data-position="right" data-intro="Contamos con varios servicios que harán una tutoría agradable" data-step="2">
 			<!-- Oferta -->	
 				<div class="dpmt_courses">
 					<div class="row align-items-center">
@@ -165,12 +166,12 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
-					<div class="main_title">
+					<div class="main_title" data-position="right" data-intro="Descubre cómo funciona URMentoring" data-step="3">
 						<h2>¿Cómo funciona?</h2>
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" data-position="right" data-intro="No es complicado! tus hijos reforzarán sus conocimientos con nosotros" data-step="4">
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6 text-center">
 					<div class="single_course">
@@ -311,8 +312,8 @@
 					<h4>Enlaces de interés</h4>
 					<hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
 					<ul>
-						<li><a href="#">Preguntas frecuentes</a></li>
-						<li><a href="#">Mapa web</a></li>
+						<li><a href="html/comoFunciona.html">Preguntas frecuentes</a></li>
+						<li><a href="index.html">Mapa web</a></li>
 						<li><a href="#">Quiero ser tutor</a></li>
 					</ul>
 				</div>
@@ -332,18 +333,8 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/owl-carousel-thumb.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="vendors/counter-up/jquery.counterup.js"></script>
-    <script src="js/mail-script.js"></script>
-    <!--gmaps Js-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script>
-    <script src="js/theme.js"></script>
+    <script src="js/bootstrap.min.js"></script>   
+    <script type="text/javascript" src="js/intro.js"></script> 
 </body>
 
 </html>

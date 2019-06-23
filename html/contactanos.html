@@ -9,6 +9,8 @@
 	<title>Contáctanos</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- Map -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
 	<!-- main css -->
 	<link rel="stylesheet" href="../css/style.css">
 </head>
@@ -34,8 +36,8 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item active"><a class="nav-link" href="../index.html">Inicio</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Cómo funciona</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
+							<li class="nav-item"><a class="nav-link" href="comoFunciona.html">Cómo funciona</a></li>
+							<li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
 							<li class="nav-item"><a class="nav-link" href="sobreNosotros.html">Sobre nosotros</a></li>
 							<li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
 							<li class="nav-item"><a class="nav-link" href="login.html">Iniciar Sesión</a></li>
@@ -65,8 +67,40 @@
 		</div>
 	</section>
 
+	<div class="section_gap">
+	<div class="container">
+                <div id="mapid" class="row pb-3 px-3">
+                </div>
+     </div>
+     </div>
+
+
 	<div class="registro">
 		<div class="container">
+			<div class="row">  
+				<div class="col-lg-3">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <img src="../img/f-icons/home.png" alt="home">
+                            <h6>Guayaquil, Ecuador</h6>
+                            <p>Escuela Superior Politécnica del Litoral</p>
+                        </div>
+                        <div class="info_item">
+                             <img src="../img/f-icons/call.png" alt="home">
+                            <h6>1800-10969100</h6>
+                            <p>Lunes a Viernes - 9am a 6 pm</p>
+                        </div>
+                        <div class="info_item">
+                             <img src="../img/f-icons/email.png" alt="home">
+                            <h6><a href="#">help@urmentoring.com</a></h6>
+                            <p>¡Siempre estamos disponibles para ti!</p>
+                        </div>
+                    </div>
+                </div>
+
+
+			 <div class="col">
+
 			<div class="formulario">
 				<form>
 					<div class="form-row d-flex justify-content-center">	
@@ -149,6 +183,9 @@
 							</form>	
 						</div>
 					</div>
+					</div>
+
+					</div>
 		
 	</div>
 
@@ -183,18 +220,22 @@
 				
 				<div class="footer-copyright text-center py-3">
 				Copyright © 2019 All rights reserved 
-				<a href="#"><img src="img/f-icons/facebook.png" alt=""></a>
-				<a href="#"><img src="img/f-icons/twitter.png" alt=""></a>
+				<a href="#"><img src="../img/f-icons/facebook.png" alt=""></a>
+				<a href="#"><img src="../img/f-icons/twitter.png" alt=""></a>
 			    </div>
 
 			</div>
 		</div>
 	</footer>
 	<!--================ End footer Area  =================-->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/popper.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- Mapa -->
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+	<script src="../js/mymap.js"></script>
 </body>
 
 </html>
