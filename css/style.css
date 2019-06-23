@@ -3507,7 +3507,7 @@ background: #38b6ff;
 
 /*================ Area de información =================*/
 
-<<<<<<< HEAD
+
 
 /*=================Perfil de Estudiante===================*/
 .subnav-link {
@@ -3515,7 +3515,7 @@ background: #38b6ff;
   padding-left: 5em;
   padding-right: 5em;
 }
-=======
+
 /*================ como funciona  =================*/
 .banner_final{
  background-color: #FFD92D;
@@ -4484,9 +4484,10 @@ h2.cabecera {
     min-height: 900px;
 }
 
-
+.ng-scope{
+  margin-top: 15px;
+}
 
 /********** Fin - Panel Administrador **********/
 
 /*================ Novedades =====================*/
->>>>>>> 09228c61f6ec788e9f2a0e550d3b6a9823c965bf

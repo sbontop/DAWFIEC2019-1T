@@ -1,4 +1,4 @@
-function ListaComprasController($scope) {
+function ListaMateriasController($scope) {
 
     $scope.item = {};
 

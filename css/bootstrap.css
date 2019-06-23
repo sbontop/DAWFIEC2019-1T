@@ -2468,9 +2468,6 @@ textarea.form-control {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: .25rem;
-    
-    margin-top: 15px;
-    margin-bottom: 15px;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
@@ -3574,7 +3571,6 @@ input[type=submit].btn-block {
     flex: 1 1 auto;
     width: 1%;
     margin-bottom: 0;
-    margin-top: 15px;
     margin-bottom: 15px;
 }
 
