@@ -1440,7 +1440,7 @@ padding: 10px;}
   background: #fafaff;
   border: 1px solid #eee;
   padding: 50px 30px;
-  margin-top: 50px; }
+  margin-top: 10px; }
   @media (max-width: 414px) {
     .comments-area {
       padding: 50px 8px; } }
@@ -1551,21 +1551,9 @@ padding: 10px;}
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*============== contact_area css ================*/
-.mapBox {
-  height: 420px;
-  margin-bottom: 80px; }
-
 .contact_info .info_item {
   position: relative;
-  padding-left: 45px; }
-  .contact_info .info_item i {
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 20px;
-    line-height: 24px;
-    color: #00aee0;
-    font-weight: 600; }
+   }
   .contact_info .info_item h6 {
     font-size: 16px;
     line-height: 24px;
@@ -1579,6 +1567,8 @@ padding: 10px;}
     font-size: 14px;
     line-height: 24px;
     padding: 2px 0px; }
+    .contact_info .info_item img {
+   margin-bottom: 10px; }
 
 .contact_form .form-group {
   margin-bottom: 10px; }
@@ -3395,7 +3385,7 @@ div.categories_text:hover{
 }
 
 .registro{
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 60px;
 }
 
@@ -3423,6 +3413,10 @@ background: #38b6ff;
 .formulario{
   padding-top: 10px;
   background-color: #E1DFE3;
+}
+
+.tmap h3{
+  margin-bottom: 10px;
 }
 
   /*=====================Contactanos=======================*/
@@ -3507,7 +3501,7 @@ background: #38b6ff;
 
 /*================ Area de información =================*/
 
-<<<<<<< HEAD
+
 
 /*=================Perfil de Estudiante===================*/
 .subnav-link {
@@ -3515,7 +3509,7 @@ background: #38b6ff;
   padding-left: 5em;
   padding-right: 5em;
 }
-=======
+
 /*================ como funciona  =================*/
 .banner_final{
  background-color: #FFD92D;
@@ -3744,7 +3738,7 @@ ul.top-menu > li > .logout {
   border: 1px solid #64c3c2 !important;
   padding: 10px 20px 10px 20px;
   margin-right: 15px;
-  background: #68dff0;
+  background: #38b6ff;
   margin-top: 15px;
 }
 
@@ -3828,7 +3822,7 @@ ul.sidebar-menu li a{
 }
 
 ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
-    background: #68dff0;
+    background: #38b6ff;
     color: #fff;
     display: block;
 
@@ -4009,7 +4003,8 @@ a.logo span {
     background: #2A3542;
 }
 .bg-theme {
-  background-color: #68dff0;
+  background-color: #38b6ff;
+  color: white;
 }
 
 .wrapper {
@@ -4483,9 +4478,43 @@ h2.cabecera {
     min-height: 900px;
 }
 
-
+#cns.content{
+  margin-top: 15px;
+}
 
 /********** Fin - Panel Administrador **********/
 
-/*================ Novedades =====================*/
->>>>>>> 09228c61f6ec788e9f2a0e550d3b6a9823c965bf
+/*=============== Registrarse ====================*/
+
+.area_formulario {
+  z-index: 1;
+  min-height: 200px;
+  display: flex;
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner/registrarse.jpg) no-repeat scroll center; }
+
+
+#botonRegistro{
+background: #38b6ff;
+      background-size: 200% auto;
+      border-radius: 0;
+      color: #fff;
+      left: 60px;
+      padding: 10px 35px;
+      border: 0;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; 
+
+}
+
+.prop {
+
+  margin-top: 20px;
+}
+
+/*=============== Fin Registrarse ====================*/

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,16 +21,16 @@
     <!-- main css -->
     <link rel="stylesheet" href="../css/style.css">
     <link href="../css/style-responsive.css" rel="stylesheet">
-</head>
+  </head>
 
-<body>
+  <body>
     <!--================ Start Header Menu Area =================-->
     <header class="header black-bg">
         <div class="sidebar-toggle-box">
             <div class="fa fa-bars tooltips" data-placement="right"></div>
         </div>
         <!--logo start-->
-        <a class="logo" href="../index.html"><b><img src="../img/logoPrincipal.png" alt="" width="155" height="50"></b></a>
+        <a class="logo" href="index-admin.html"><b><img src="../img/logoPrincipal.png" alt="" width="155" height="50"></b></a>
         <!--logo end-->
         <div class="nav notify-row" id="top_menu">
             <!--  notification start -->
@@ -67,19 +67,18 @@
                  
               <ul class="sidebar-menu" id="nav-accordion">
                   <li class="encabezado-admin">
-                    <p class="centered"><a href="perfil-administrador.html"><img src="../img/admin/worker.png" class="img-circle" width="60" alt="admin"></a>
-                    </p> 
+                    <p class="centered"><img src="../img/admin/worker.png" class="img-circle" width="60" alt="admin"></p> 
                     <p class="tituloA">Administrador</p>
                   </li>
                   <li class="mt">
-                      <a class="active" href="#">
+                      <a href="index-admin.html">
                           <i class="fa fa-dashboard"></i>
                           <span>Mi Panel</span>
                       </a>
                   </li>
 
                   <li class="sub-menu">
-                      <a href="javascript:;" >
+                      <a class="active" href="javascript:;" >
                           <i class="fa fa-desktop"></i>
                           <span>Perfil</span>
                       </a>
@@ -88,16 +87,6 @@
                       </ul>
                   </li>
 
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-cogs"></i>
-                          <span>Utilidades</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="#">Calendario</a></li>
-                          <li><a  href="#">Galería</a></li>
-                      </ul>
-                  </li>
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-user"></i>
@@ -122,10 +111,10 @@
                           <span>Materias</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="#">Agregar</a></li>
-                          <li><a  href="#">Ver</a></li>
-                          <li><a  href="#">Modificar</a></li>
-                          <li><a  href="#">Eliminar</a></li>
+                          <li><a  href="CRUD/Read.html">Buscar</a></li>
+                          <li><a  href="CRUD/Create.html">Agregar</a></li>
+                          <li><a  href="CRUD/Update.html">Modificar</a></li>
+                          <li><a  href="CRUD/Delete.html">Eliminar</a></li>
                       </ul>
                   </li>
                   <li class="sub-menu">
@@ -142,103 +131,99 @@
               </ul>
               <!-- sidebar menu end-->
           </div>
-      </aside>
+    </aside>
     <!--sidebar end-->
     
     <section id="main-content">
-        <h2 class="cabecera">Encabezado </h2>
-        <section class="wrapper">
-            <div class="row">
-                <div class="col-lg-12 main-chart">
-                <div class="gradient-bg titulo-principal">   
-                    <h2 class="encabezado">Mi perfil</h2> 
-                </div>
-                <div class="course_details_area section_gap">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-5 course_details_left">
-                                <div class="blog_right_sidebar">
-                                    <div class="single_instructor">
-                                        <div class="author">
-                                        <img src="../img/instructors/ins1.jpg" alt="">
-                                        </div>
-                                        <div class="author_decs">
-                                            <h4>Martin Dunn</h4>
-                                            <p class="profession">Contador</p>
-                                            <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-
-                            <div class="col-lg-7 right-contents">
-                                <h3 class="title">Información básica</h3>
-                                <ul>
-                                    <li>
-                                        <a class="justify-content-between d-flex" >
-                                            <p>Nombre</p>
-                                            <!-- <input type="text" class="or" value="Martin Dunn" readonly></input> -->
-                                             <span>Martin Dunn</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="justify-content-between d-flex" >
-                                            <p>Sexo</p>
-                                            <span>Masculino</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="justify-content-between d-flex" >
-                                            <p>Pais </p>
-                                            <span>Ecuador</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="justify-content-between d-flex">
-                                            <p>Fecha de nacimiento </p>
-                                            <span>15/05/1970</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="justify-content-between d-flex">
-                                            <p>Representado </p>
-                                            <span>Rose Dunn</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="justify-content-between d-flex">
-                                            <p>Telefono </p>
-                                            <!-- <input type="text" class="or" value="0543436452" readonly></input> -->
-                                            <span>0543436452</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#" class="genric-btn success large">Editar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+      <h2 class="cabecera">Encabezado </h2>
+      <section class="wrapper">
+        <div class="row">
+          <div class="col-lg-12 main-chart">
+            <div class="gradient-bg titulo-principal">   
+                <h2 class="encabezado">Mi perfil</h2> 
             </div>
-        </section>
-    </section>
-    <!--================ Start footer Area  =================-->
-    <!--footer start-->
-    <footer class="site-footer">
-        <div class="text-center">
-          2019 - URMentoring
-          <a href="#" class="go-top">
-              <i class="fa fa-angle-up"></i>
-          </a>
+            <div class="course_details_area section_gap">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-5 course_details_left">
+                    <div class="blog_right_sidebar">
+                      <div class="single_instructor">
+                        <div class="author">
+                          <img src="../img/instructors/ins1.jpg" alt="">
+                        </div>
+                        <div class="author_decs">
+                          <h4>Martin Dunn</h4>
+                          <p class="profession">Contador</p>
+                          <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+
+                  <div class="col-lg-7 right-contents">
+                      <h3 class="title">Información básica</h3>
+                      <ul>
+                          <li>
+                              <a class="justify-content-between d-flex" >
+                                  <p>Nombre</p>
+                                  <!-- <input type="text" class="or" value="Martin Dunn" readonly></input> -->
+                                   <span>Martin Dunn</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a class="justify-content-between d-flex" >
+                                  <p>Sexo</p>
+                                  <span>Masculino</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a class="justify-content-between d-flex" >
+                                  <p>Pais </p>
+                                  <span>Ecuador</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a class="justify-content-between d-flex">
+                                  <p>Fecha de nacimiento </p>
+                                  <span>15/05/1970</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a class="justify-content-between d-flex">
+                                  <p>Representado </p>
+                                  <span>Rose Dunn</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a class="justify-content-between d-flex">
+                                  <p>Telefono </p>
+                                  <!-- <input type="text" class="or" value="0543436452" readonly></input> -->
+                                  <span>0543436452</span>
+                              </a>
+                          </li>
+                      </ul>
+                      <a href="#" class="genric-btn success large">Editar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer> 
+      </section>
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+            2019 - URMentoring
+            <a href="#" class="go-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
+          </div>
+      </footer> 
       <!--footer end-->
-    <!--================ End footer Area  =================-->
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-
     <script src="../js/jquery.js"></script>
     <script src="../js/jquery-1.8.3.min.js"></script> 
     <script src="../js/jquery-3.2.1.min.js"></script>
@@ -270,5 +255,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
     <script src="../js/gmaps.min.js"></script>
     <script src="../js/theme.js"></script>
-</body>
+  </body>
+
 </html>

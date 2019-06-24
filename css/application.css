@@ -1,0 +1,11 @@
+#lista td, #lista th {
+	text-align: center;
+}
+.marcado-true {
+	text-decoration: line-through;
+	color: red;
+}
+.page-header {
+	padding-top: 30px;
+    padding-bottom: 20px;
+}
