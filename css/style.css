@@ -3360,26 +3360,26 @@ div.categories_text:hover{
   position: relative;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner/Banner1.jpg) no-repeat scroll center; }
 
-.area_formulario .banner_formulario {
+.banner_formulario {
     position: relative;
     z-index: 10;
     width: 100%;
     display: flex; }
 
-.area_formulario .banner_formulario .container {
+.banner_formulario .container {
       vertical-align: middle;
       align-self: center; }
-    .area_formulario .banner_formulario .contenido_formulario {
+.contenido_formulario {
       color: #fff; }    
 
 
-.area_formulario .contenido_formulario h2{
+.contenido_formulario h2{
         color: white;
         margin-bottom: 20px;
 }
 
-.area_formulario .contenido_formulario h4{
-        color: darkgray;
+.contenido_formulario h4{
+        color: beige;
         margin-bottom: 8px;
          margin-top: 8px;
 }
@@ -4486,12 +4486,13 @@ h2.cabecera {
 
 /*=============== Registrarse ====================*/
 
-.area_formulario {
+.area_registro {
   z-index: 1;
   min-height: 200px;
   display: flex;
   position: relative;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner/registrarse.jpg) no-repeat scroll center; }
+
 
 
 #botonRegistro{
