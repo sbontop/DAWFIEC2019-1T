@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../img/icon.png" type="image/png">
+    <title>Mis Aulas</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../vendors/linericon/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="../vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="../vendors/animate-css/animate.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand-logo_h" href="../index.html"><img src="../img/logoPrincipal.png" alt=""
+                            width="155" height="50"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="vista-estudiante.html">Inicio</a></li>
+                            <!--<li class="nav-item"><a class="nav-link" href="#">Perfil del alumno</a></li> -->
+                            <li class="nav-item submenu dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Tutoria</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="aulas-estudiante.html">Mis Aulas</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="clases-programadas-estudiante.html">Clases Programadas</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="detalles-tutor.html">Ver tutores</a></li> -->
+                            <li class="nav-item"><a class="nav-link" href="mensaje-estudiante.html">Mensajes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="perfil-estudiante.html">Mi perfil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="login.html">Cerrar Sesión</a></li>
+                            <!-- <li class="nav-item">
+                                    <a href="#" class="nav-link search" id="search">
+                                        <i class="lnr lnr-magnifier"></i> 
+                                    </a>
+                                </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================ End Header Menu Area =================-->
+
+    <section class="gradient-bg titulo-principal">
+        <h2 class="encabezado">Mis Aulas</h2>
+    </section>
+
+    <!--================ Start Mis Cursos =================-->
+    <section>
+
+
+            <form>
+                <div class="row" style="padding: 40px;">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <select class="custom-select w-50" id="provincia" required>
+                            <option value="todos">Todas las materias</option>
+                            <option value="ingles">Matemáticas</option>
+                            <option value="literatura">Física</option>
+                            <option value="ciencias_naturales">Química</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <select class="custom-select w-50" id="provincia" required>
+                            <option value="todas_reservas">Todas las reservas</option>
+                            <option value="todas_completadas">Completadas</option>
+                            <option value="pendientes_confirmar">Por Confirmar</option>
+                            <option value="pendientes_realizar">Por Realizar</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">                
+                        <!-- Search form -->
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>                
+                    </div>
+                </div>
+            </form>
+
+        <div class="row">
+            <div class="card-deck" style="margin:40px;">
+                <div class="card mb-3" style="max-width: 400px; max-height: 400px; padding: 10px; margin: 10px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img class="rounded mx-auto d-block"
+                                src="https://ep00.epimg.net/miperfil/avatares/9/86/tomcavendano.jpg"
+                                alt="Card image cap" width="100px" height="100px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Matemáticas</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Pablo Larreta</h6>
+                                <p class="card-text">Repaso para el exámen del primer parcial de ingreso a la
+                                    Universidad
+                                </p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="card-link">Ir a Sesión</a>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 400px; max-height: 400px; padding: 10px; margin: 10px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img class="rounded mx-auto d-block"
+                                src="https://media.licdn.com/dms/image/C5603AQFvw6CaOoePBA/profile-displayphoto-shrink_100_100/0?e=1562803200&v=beta&t=D7pA9GvN8RFsYrTZHc70rQpJJcjoqYMRZxl6KANeJBM"
+                                alt="Card image cap" width="100px" height="100px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Física</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Carla Moreno</h6>
+                                <p class="card-text">Repaso para el exámen del primer parcial de ingreso a la
+                                    Universidad
+                                </p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="card-link">Ir a Sesión</a>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 400px; max-height: 400px; padding: 10px; margin: 10px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img class="rounded mx-auto d-block"
+                                src="https://cdn-images-1.medium.com/fit/c/100/100/1*x7sUfGwma9FoMNrRFAidTA.jpeg"
+                                alt="Card image cap" width="100px" height="100px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Química</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Juana Aguilar</h6>
+                                <p class="card-text">Repaso para el exámen del primer parcial de ingreso a la
+                                    Universidad
+                                </p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="card-link">Ir a Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+
+    </section>
+
+    <!--================ End Mis Cursos =================-->
+
+
+    <!--================ Start footer Area  =================-->
+    <footer class="footer-area section_gap">
+        <div class="container text-center text-md-left">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                    <h4>Contáctanos</h4>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>help@urmentoring.com</p>
+                    <p>1800-10969100</p>
+                </div>
+                <div class="col-lg-2 col-md-6 offset-md-2 single-footer-widget">
+                    <h4>Nuestra empresa</h4>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <ul>
+                        <li><a href="#">Acerca de nosotros</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Términos de servicio</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 offset-md-2 single-footer-widget">
+                    <h4>Enlaces de interés</h4>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <ul>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Mapa web</a></li>
+                        <li><a href="#">Quiero ser tutor</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-copyright text-center py-3">
+                    Copyright © 2019 All rights reserved
+                    <a href="#"><img src="../img/f-icons/facebook.png" alt=""></a>
+                    <a href="#"><img src="../img/f-icons/twitter.png" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!--================ End footer Area  =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/stellar.js"></script>
+    <script src="../vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="../js/owl-carousel-thumb.min.js"></script>
+    <script src="../js/jquery.ajaxchimp.min.js"></script>
+    <script src="../vendors/counter-up/jquery.counterup.js"></script>
+    <script src="../js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="../js/gmaps.min.js"></script>
+    <script src="../js/theme.js"></script>
+</body>
+
+</html>
