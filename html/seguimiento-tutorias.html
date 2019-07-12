@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="../img/icon.png" type="image/png">
-    <title>Perfil representante</title>
+    <title>Mis Aulas</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../vendors/linericon/style.css">
@@ -25,7 +26,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">  
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand-logo_h" href="../index.html"><img src="../img/logo.png" alt="URMentoring icon" width="75" height="75"></a>
+                    <a class="navbar-brand-logo_h" href="../index.html"><img src="../img/logo.png" alt="" width="70" height="70"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
@@ -36,16 +37,16 @@
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item"><a class="nav-link" href="inicio-representante.html">Inicio</a></li>
-                            <li class="nav-item submenu dropdown">
+                            <li class="nav-item submenu dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutoria</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a class="nav-link" href="agendar-tutoria.html">Planificar tutoria</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="seguimiento-tutorias.html">Seguimiento  de tutoria</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Seguimiento  de tutoria</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="detalles-tutor.html">Ver tutores</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Mensajes</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="perfil-representante.html">Mi perfil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="perfil-representante.html">Mi perfil</a></li>
                             <li class="nav-item"><a class="nav-link" href="login.html">Cerrar Sesión</a></li>
                         </ul>
                     </div>
@@ -55,75 +56,120 @@
     </header>
     <!--================ End Header Menu Area =================-->
 
-    <section class="gradient-bg titulo-principal">   
-        <h2 class="encabezado">Mi perfil</h2> 
+    <section class="gradient-bg titulo-principal">
+        <h2 class="encabezado">Mis tutorías</h2>
     </section>
-   
+
+    <!--================ Start Mis Cursos =================-->
+        
     <section class="course_details_area section_gap">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 course_details_left">
-                    <div class="blog_right_sidebar">
-                        <div class="single_instructor">
-                            <div class="author">
-                            <img src="../img/instructors/ins1.jpg" alt="">
-                            </div>
-                            <div class="author_decs">
-                                <h4>Martin Dunn</h4>
-                                <p class="profession">Contador</p>
-                                <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
+                <div class="col-lg-8 course_details_left">
+                    
+                        <h4 class="title">Tutorías reservadas</h4>
+                       
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a class="justify-content-between d-flex" >
+                                        <p>Nombre del tutor</p>
+                                        <span class="or">Josué Sanchez</span>
+                                    </a>
+                                </li>
+                            </ul> 
+                   
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex">
+                                <p>Materia </p>
+                                <span>Inglés</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex">
+                                <p>Día </p>
+                                <span>15 de Julio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex">
+                                <p>Hora </p>
+                                <span>3.00 pm - 4.00 pm</span>
+                            </a>
+                        </li>
+                        <a href="#" class="primary-btn danger text-uppercase enroll">Cancelar</a>
+                    </ul> 
+                  
+                    
+                </div>
 
-                <div class="col-lg-7 right-contents">
-                    <h3 class="title">Información básica</h3>
+                <div class="col-lg-4 right-contents">
+                    <h4 class="title">Tutorías pasadas</h4>
                     <ul>
                         <li>
                             <a class="justify-content-between d-flex" >
-                                <p>Nombre</p>
-                                <!-- <input type="text" class="or" value="Martin Dunn" readonly></input> -->
-                                 <span>Martin Dunn</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="justify-content-between d-flex" >
-                                <p>Sexo</p>
-                                <span>Masculino</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="justify-content-between d-flex" >
-                                <p>País </p>
-                                <span>Ecuador</span>
+                                <p>Nombre del tutor</p>
+                                <span class="or">Martín Dunn</span>
                             </a>
                         </li>
                         <li>
                             <a class="justify-content-between d-flex">
-                                <p>Fecha de nacimiento </p>
-                                <span>15/05/1970</span>
+                                <p>Materia </p>
+                                <span>Matemáticas</span>
                             </a>
                         </li>
                         <li>
                             <a class="justify-content-between d-flex">
-                                <p>Representado </p>
-                                <span>Rose Dunn</span>
+                                <p>Día </p>
+                                <span>15 de Junio</span>
                             </a>
                         </li>
                         <li>
                             <a class="justify-content-between d-flex">
-                                <p>Teléfono </p>
-                                <!-- <input type="text" class="or" value="0543436452" readonly></input> -->
-                                <span>0543436452</span>
+                                <p>Hora </p>
+                                <span>2.00 pm - 4.00 pm</span>
                             </a>
                         </li>
                     </ul>
-                    <a href="#" class="genric-btn success large">Editar</a>
+
+                    <h4 class="title">Tutorías canceladas</h4>
+                    <ul>
+                        <li>
+                            <a class="justify-content-between d-flex" >
+                                <p>Nombre del tutor</p>
+                                <span class="or">Martín Dunn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex">
+                                <p>Materia </p>
+                                <span>Matemáticas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex">
+                                <p>Día </p>
+                                <span>15 de Junio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex">
+                                <p>Hora </p>
+                                <span>2.00 pm - 4.00 pm</span>
+                            </a>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </div>
     </section>
+
+    <!--================ End Mis Cursos =================-->
+
+
     <!--================ Start footer Area  =================-->
     <footer class="footer-area section_gap">
         <div class="container text-center text-md-left">
@@ -152,11 +198,11 @@
                         <li><a href="#">Quiero ser tutor</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-copyright text-center py-3">
-                Copyright © 2019 All rights reserved 
-                <a href="#"><img src="../img/f-icons/facebook.png" alt=""></a>
-                <a href="#"><img src="../img/f-icons/twitter.png" alt=""></a>
+                    Copyright © 2019 All rights reserved
+                    <a href="#"><img src="../img/f-icons/facebook.png" alt=""></a>
+                    <a href="#"><img src="../img/f-icons/twitter.png" alt=""></a>
                 </div>
 
             </div>
@@ -181,4 +227,5 @@
     <script src="../js/gmaps.min.js"></script>
     <script src="../js/theme.js"></script>
 </body>
+
 </html>

@@ -4586,3 +4586,20 @@ tbody tr td a:hover{
 }
 
 /*===============fin Buscador =======================*/
+
+
+
+.course_details_left ul li {
+  justify-content: center;
+    list-style: none;
+    background: #f9f9f9;
+    padding: 10px 22px;
+    margin-bottom: 10px; }
+    .course_details_left ul li a {
+      color: #777777;
+      text-align: left; }
+      .course_details_left ul li a p {
+        margin-bottom: 0px; }
+    .course_details_left ul li .or {
+      color: #222222; }
+
