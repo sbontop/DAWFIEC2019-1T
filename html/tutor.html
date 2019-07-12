@@ -50,7 +50,7 @@
                                     <li class="nav-item"><a class="nav-link" href="editarperfiltutor.html">Editar Perfil</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="">Notificaciones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="login.html">Cerrar Sesión</a></li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link search" id="search">
                                     <i class="lnr lnr-magnifier"></i>
@@ -69,6 +69,7 @@
         <h2 class="encabezado">Perfil Tutor<a class="perfilUsuario" href=""><img src="../img/IconoUsuario.png" alt="" align="center"></a> </h2> 
 
     </section>
+    
     <style>
         .perfilUsuario img{
             
@@ -77,12 +78,75 @@
             margin-right: 20px;
             border-radius: 50%;
         }
+        .dropdown {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+
+        }
+
+        .dropdown-content {
+          overflow: auto;
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          width: 460px ;
+          height: 170px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px 16px;
+          z-index: 1;
+          
+
+        }
+        #coment {
+
+          border-bottom: 6px solid red;
+          background-color: #f2f2f2;
+          margin-bottom: 30px;
+          cursor: text;
+
+        }
+
+        #i4{
+            
+        }
+        
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+
+        }
     </style>
+    <script>
+        
+        function pag2(){
+            document.getElementById("pag2").className = "page-item active";
+            document.getElementById("pag1").className = "page-item";
+
+            document.getElementById("1").style.display = "none";
+            document.getElementById("2").style.display = "none";
+            document.getElementById("3").style.display = "none";
+            document.getElementById("i4").style.display = "";                               
+
+        };
+        function pag1(){
+            document.getElementById("pag1").className = "page-item active";
+            document.getElementById("pag2").className = "page-item";
+            document.getElementById("1").style.display = "";
+            document.getElementById("2").style.display = "";
+            document.getElementById("3").style.display = "";
+            document.getElementById("i4").style.display = "none";                                
+
+        };
+
+        
+    </script>
     
     <!--================End Home Banner Area =================-->
 
     <!--================Blog Categorie Area =================-->
     <section class="blog_categorie_area">
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -105,7 +169,7 @@
                         <div class="categories_details">
                             <div class="categories_text">
                                 <a href="calendario.html">
-                                    <h5>Calendario</h5>
+                                    <h5>Citas</h5>
                                 </a>
                                 <div class="border_line"></div>
                                 <p>Revisa todas las actividades y reuniones programadas</p>
@@ -138,19 +202,36 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog_left_sidebar">
-                        <article class="row blog_item">
+                        <article id="1" class="row blog_item">
                             <div class="col-md-3">
                                 <div class="blog_info text-right">
                                     <div class="post_tag">
-                                        <a href="#">Mathematics,</a>
+                                        <a >Matemática,</a>
                                         
-                                        <a href="#">Science</a>
+                                        <a >Ciencia</a>
                                     </div>
                                     <ul class="blog_meta list">
-                                        <li><a href="#">Evaluado<i class="lnr lnr-user"></i></a></li>
-                                        <li><a href="#">12 Dic, 2017<i class="lnr lnr-calendar-full"></i></a></li>
-                                        <li><a href="#">12 Views<i class="lnr lnr-eye"></i></a></li>
-                                        <li><a href="#">03 Comments<i class="lnr lnr-bubble"></i></a></li>
+                                        <li><a >Evaluado<i class="lnr lnr-user"></i></a></li>
+                                        <li><a >12 Dic, 2017<i class="lnr lnr-calendar-full"></i></a></li>
+                                        <li><a >12 Views<i class="lnr lnr-eye"></i></a></li>
+                                        
+                                        <li><div class="dropdown">
+                                          <a>coments 03<i class="lnr lnr-bubble"></i></a>
+                                          <div class="dropdown-content">
+                                          
+                                          <div id="coment" >
+                                             
+                                              <p align="justify" font-weight="bolder"> <image src="../img/author1.png"  float="left">que buena materia en serio! mira es tan genial que el tutor tiene que darla de nuevo, me gusto mucho la materia que yo probaría con aquella en serio</p>
+                                          </div>
+                                          <div id="coment" >
+                                              <p align="justify" font-weight="bolder"> <image src="../img/author.png"  float="left">que buena materia en serio! mira es tan genial que el tutor tiene que darla de nuevo, me gusto mucho la materia que yo probaría con aquella en serio</p>
+                                          </div>
+                                          <div id="coment" >
+                                              <p align="justify" font-weight="bolder"> <image src="../img/author.png"  float="left">Comentando dos veces para que vean que me gustó tanto la materia, recomiendo este profesor muchas veces. Aprenderás de largo</p>
+                                          </div>
+                                          
+                                          </div>
+                                        </div><li>
                                     </ul>
                                 </div>
                             </div>
@@ -158,28 +239,38 @@
                                 <div class="blog_post">
                                     <img src="../img/blog/main-blog/matematicas.jpg" alt="">
                                     <div class="blog_details">
-                                        <a href="">
+                                        <a href="../html/courses.html">
                                             <h2>Matemática básica con principios avanzados</h2>
                                         </a>
                                         <p>Curso creado para fortalecer las falencias que tengan los estudiantes de 5to de bachillerato relacionado a matemáticas basicas con ciertos conocimientos avanzados que le ayudaran a mejorar su manera de razonar y resolver problemas</p>
-                                        <a href="" class="blog_btn">View More</a>
+                                        <!--<a href="" class="blog_btn">View More</a>-->
                                     </div>
                                 </div>
                             </div>
                         </article>
-                        <article class="row blog_item">
+                        <article id="2" class="row blog_item">
                             <div class="col-md-3">
                                 <div class="blog_info text-right">
                                     <div class="post_tag">
-                                        <a href="#">Science,</a>
+                                        <a >Ciencia,</a>
                                         
-                                        <a href="#">Chemistry</a>
+                                        <a >Química</a>
                                     </div>
                                     <ul class="blog_meta list">
-                                        <li><a href="#">Evaluado<i class="lnr lnr-user"></i></a></li>
-                                        <li><a href="#">10 Oct, 2017<i class="lnr lnr-calendar-full"></i></a></li>
-                                        <li><a href="#">8 Views<i class="lnr lnr-eye"></i></a></li>
-                                        <li><a href="#">01 Comments<i class="lnr lnr-bubble"></i></a></li>
+                                        <li><a >Evaluado<i class="lnr lnr-user"></i></a></li>
+                                        <li><a >10 Oct, 2017<i class="lnr lnr-calendar-full"></i></a></li>
+                                        <li><a >8 Views<i class="lnr lnr-eye"></i></a></li>
+                                        <li><div class="dropdown">
+                                          <a>coments 01<i class="lnr lnr-bubble"></i></a>
+                                          <div class="dropdown-content">
+                                          <div id="coment" >
+                                             
+                                              <p align="justify" font-weight="bolder"> <image src="../img/author1.png"  float="left">No la cojan, a pesar que el profesor hace todo su esfuerzo la materia es muy pesada, dificil de entender. Pienso que se necesitaria de una clase presencial</p>
+                                          </div>
+                                          
+                                          
+                                          </div>
+                                        </div><li>
                                     </ul>
                                 </div>
                             </div>
@@ -187,28 +278,28 @@
                                 <div class="blog_post">
                                     <img src="../img/blog/main-blog/quimica.jpg" alt="">
                                     <div class="blog_details">
-                                        <a href="">
+                                        <a href="../html/courses.html">
                                             <h2>Fundamentos de Química 1</h2>
                                         </a>
                                         <p>Parte fundamental de este curso es revisar y reforzar los conocimientos básicos de química, con su respectiva implementación en el balanceo de fórmulas y conocer las diferentes soluciones existentes con su respectiva clasificación</p>
-                                        <a href="" class="blog_btn">View More</a>
+                                        <!--<a href="" class="blog_btn">View More</a>-->
                                     </div>
                                 </div>
                             </div>
                         </article>
-                        <article class="row blog_item">
+                        <article id="3" class="row blog_item">
                             <div class="col-md-3">
                                 <div class="blog_info text-right">
                                     <div class="post_tag">
-                                        <a href="#">History,</a>
-                                        <a href="#">Lifestyle,</a>
-                                        <a href="#">Science</a>
+                                        <a >Historia,</a>
+                                        <a >Estilo de vida,</a>
+                                        <a >Ciencia</a>
                                     </div>
                                     <ul class="blog_meta list">
-                                        <li><a href="#">Evaluado<i class="lnr lnr-user"></i></a></li>
-                                        <li><a href="#">22 Jul, 2017<i class="lnr lnr-calendar-full"></i></a></li>
-                                        <li><a href="#">22 Views<i class="lnr lnr-eye"></i></a></li>
-                                        <li><a href="#">09 Comments<i class="lnr lnr-bubble"></i></a></li>
+                                        <li><a >Evaluado<i class="lnr lnr-user"></i></a></li>
+                                        <li><a >22 Jul, 2017<i class="lnr lnr-calendar-full"></i></a></li>
+                                        <li><a >22 Views<i class="lnr lnr-eye"></i></a></li>
+                                        <li><a >09 Comments<i class="lnr lnr-bubble"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -216,11 +307,57 @@
                                 <div class="blog_post">
                                     <img src="../img/blog/main-blog/historia.jpg" alt="">
                                     <div class="blog_details">
-                                        <a href="">
+                                        <a href="../html/courses.html">
                                             <h2>Historia Contemporánea</h2>
                                         </a>
                                         <p>El estudio de La Historia Contemporánea es la rama de la Historia que estudia los hechos históricos de la edad contemporánea, periodo histórico que sucede a la denominada edad moderna y cuya proximidad y prolongación hasta el presente le confieren unas connotaciones muy particulares por su cercanía en el tiempo.</p>
-                                        <a href="" class="blog_btn">View More</a>
+                                        <!--<a href="" class="blog_btn">View More</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article id="i4" class="row blog_item">
+                            <div class="col-md-3">
+                                <div class="blog_info text-right">
+                                    <div class="post_tag">
+                                        <a >Inglés,</a>
+                                        
+                                        <a >Idiomas</a>
+                                    </div>
+                                    <ul class="blog_meta list">
+                                        <li><a >Evaluado<i class="lnr lnr-user"></i></a></li>
+                                        <li><a >15 Dic, 2017<i class="lnr lnr-calendar-full"></i></a></li>
+                                        <li><a >24 Views<i class="lnr lnr-eye"></i></a></li>
+                                        
+                                        <li><div class="dropdown">
+                                          <a>coments 03<i class="lnr lnr-bubble"></i></a>
+                                          <div class="dropdown-content">
+                                          
+                                          <div id="coment" >
+                                             
+                                              <p align="justify" font-weight="bolder"> <image src="../img/author1.png"  float="left">que buena materia en serio! Aprender un nuevo idioma fue un reto para mi!, quisiera que puedan hacer más tutorias de esto</p>
+                                          </div>
+                                          <div id="coment" >
+                                              <p align="justify" font-weight="bolder"> <image src="../img/author.png"  float="left">No se como hay personas que les gusta el inglés yo lo destesto, apenas y se hablar español. Creo que esta tutoria me ayudó para pasar la materia pero no aprendiendo el idioma</p>
+                                          </div>
+                                          <div id="coment" >
+                                              <p align="justify" font-weight="bolder"> <image src="../img/author.png"  float="left">No le hagan caso al comentario de arriba, está loco! El inglés es lo mejor que pudo existir en la vida ! Tutor recomendado</p>
+                                          </div>
+                                          
+                                          </div>
+                                        </div><li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="blog_post">
+                                    <img src="../img/blog/main-blog/idiomas.jpg" alt="">
+                                    <div class="blog_details">
+                                        <a href="../html/courses.html">
+                                            <h2>Inglés Básico A</h2>
+                                        </a>
+                                        <p>Curso creado para aprender el idioma inglés y obtener destrezas al hablar con personas de otros países que hablen el mismo idioma. Este es un curso inicial, donde aprobarlo será indispensable para poder ir a los siguientes niveles.</p>
+                                        <!--<a href="" class="blog_btn">View More</a>-->
                                     </div>
                                 </div>
                             </div>
@@ -229,19 +366,20 @@
                         <nav class="blog-pagination justify-content-center d-flex">
                             <ul class="pagination">
                                 <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Previous">
+                                    <a  class="page-link" aria-label="Previous">
                                         <span aria-hidden="true">
                                             <span class="lnr lnr-chevron-left"></span>
                                         </span>
                                     </a>
                                 </li>
-                                <li class="page-item"><a href="#" class="page-link">01</a></li>
-                                <li class="page-item active"><a href="#" class="page-link">02</a></li>
-                                <li class="page-item"><a href="#" class="page-link">03</a></li>
+                                <li id="pag1"class="page-item active"><a class="page-link" onclick="pag1()">01</a>
+                                </li>
+                                <li id="pag2"class="page-item "><a  class="page-link" onclick="pag2()">02</a></li>
+                                <!--<li class="page-item"><a href="#" class="page-link">03</a></li>
                                 <li class="page-item"><a href="#" class="page-link">04</a></li>
                                 <li class="page-item"><a href="#" class="page-link">09</a></li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Next">
+                                <li class="page-item">-->
+                                    <a  class="page-link" aria-label="Next">
                                         <span aria-hidden="true">
                                             <span class="lnr lnr-chevron-right"></span>
                                         </span>
@@ -264,12 +402,12 @@
                         </aside>
                         <aside class="single_sidebar_widget author_widget">
                             <img class="author_img rounded-circle" src="../img/blog/author.png" alt="">
-                            <h4>Tutor Autorizado 1</h4>
-                            <p>Tutor capacidado</p>
+                            <h4>Tutor Autorizado </h4>
+                            <p>Docente en ciencias</p>
                             <div class="social_icon">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-github"></i></a>
+                                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.github.com"><i class="fa fa-github"></i></a>
                                 <a href="#"><i class="fa fa-behance"></i></a>
                             </div>
                             <p>Este es una descripción del perfil del profesor "tutor autorizado 1" encargado

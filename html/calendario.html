@@ -18,6 +18,34 @@
     <!-- main css -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
+<style >
+    
+.chat_people{ overflow:hidden; clear:both;}
+.chat_list {
+  border-bottom: 5px solid #c4c4c4;
+  margin: 20px 18px 10px 10px;
+  padding: 20px  18px 10px 10px;
+  float:right;
+}
+.inbox_chat { height: 200px;  width: 300px;}
+
+.active_chat{ background:#ebebeb;}
+.col-lg-7{
+   align-content: center;
+   border-bottom: 5px solid #c4c4c4;
+   margin: 20px 18px 10px 10px;
+   padding:  18px 10px 10px;
+   background:#ebebeb;
+   
+ }
+ .row{
+    display: inline-flex;
+ }
+
+
+
+
+</style>
 
 <body>
 
@@ -52,7 +80,7 @@
                                     <li class="nav-item"><a class="nav-link" href="editarperfiltutor.html">Editar Perfil</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Notificaciones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="login.html">Cerrar Sesión</a></li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link search" id="search">
                                     <i class="lnr lnr-magnifier"></i>
@@ -68,7 +96,7 @@
 
     <!--================Home Banner Area =================-->
     <section class="gradient-bg titulo-principal">   
-        <h2 class="encabezado">Calendario </h2> 
+        <h2 class="encabezado">Citas </h2> 
 
     </section>
 
@@ -76,20 +104,145 @@
 
 
 	<!-- Start Sample Area -->
-	<section class="calendarArea" >
-		<div class="container" >
-			<aside class="single_sidebar_widget popular_post_widget">
-                <h3 class="widget_title">Actividades Programadas</h3>
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FGuayaquil&amp;src=aW84YnI3N2JhaDlxczl1MDNxbWp1ZzloM2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457&amp;showNav=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=1&amp;showTitle=0&amp;mode=WEEK" style="border-width:0" width="500" height="250" frameborder="0" scrolling="no"></iframe>
-                <div class="br"></div>
-            </aside>
-            <button class="click-btn btn btn-default"  >
-				<span>Crear cita</span>
-		    </button>
-		</div>
+	<section class="calendar area">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 right-contents" display="inline">
+                    <h3 class="title">Agendar cita</h3>
+                    <ul>
+                        <li>
+                            <a class="justify-content-between d-flex" >
+                                <p>Materia</p>
+                                <!-- <input type="text" class="or" value="Martin Dunn" readonly></input> -->
+                                 <div class="col-75">
+                                    <input type="text" id="fname" name="firstname" placeholder="Ingresar materia">
+                                 </div>                            
+
+
+                           </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" >
+                                <p>Fecha</p>
+                                <div class="col-75">
+                                    
+                                   <select id="genero" name="sexo">
+                                      <option value="Seleccione">Seleccione</option>
+                                      <option value="10:00-12:00am">10:00-12:00am</option>
+                                      <option value="14:00-16:00pm">14:00-16:00pm</option>
+                                    </select>
+                                </div>
+
+
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" >
+                                <p>Lugar </p>
+                                <div class="col-75">
+                                    <select id="Pais" name="pais">
+                                      <option value="Seleccione">Seleccione</option>
+                                      <option value="Skype">Skype</option>
+                                      <option value="Plataforma">Plataforma</option>
+                                      
+                                    </select>
+                                </div>
+
+
+
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex">
+                                <p>Fecha de la tutoria </p>
+                                <div class="col-75">
+                                    <input type="text" id="fdate" name="nacimiento" placeholder="día/mes/año">
+                                 </div>
+
+
+
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex">
+                                <p>Representado </p>
+                                <div class="col-75">
+                                    <input type="text" id="fnamer" name="representado" placeholder="Nombre del representado">
+                                 </div>
+
+
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex">
+                                <p>Descripción </p>
+                                <!-- <input type="text" class="or" value="0543436452" readonly></input> -->
+                                <div class="col-75">
+                                    <input type="text" id="ftelf" name="telefono" placeholder="Inserte una descripción">
+                                 </div>
+
+
+                                
+                            </a>
+                        </li>
+                    </ul>
+                    <a id="submit" href="#" class="genric-btn success large" onclick="openAlert()">Guardar</a>
+                    <div class="alert">
+                      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                      <strong>Realizado!</strong> Su información se ha actualizado correctamente.
+                    </div>
+                </div>
+                <div class="inbox_chat" display="inline">
+                        <div class="chat_list active_chat">
+                          <div  class="chat_people">
+                            <!--<div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>-->
+                            <div class="chat_ib" >
+                              <h5>Notificación 1 <span class="chat_date">Julio 12</span></h5>
+                              <p>El representante, ha solicitado cancelar la tutoria del día de hoy. Motivos: ninguno.</p>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="chat_list active_chat">
+                          <div  class="chat_people">
+                            <!--<div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>-->
+                            <div class="chat_ib" >
+                              <h5>Notificación 2 <span class="chat_date">Julio 12</span></h5>
+                              <p>Tiene una cita agendada para el 16 de julio a las 14:00, tutorias intensivas.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="chat_list active_chat">
+                          <div  class="chat_people">
+                            <!--<div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>-->
+                            <div class="chat_ib" >
+                              <h5>Notificación 3 <span class="chat_date">Julio 11</span></h5>
+                              <p>Tiene una cita agendada sin finalizar.</p>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+
+
+
+
+            
+
 		
 		
-	</section>
+		
+	
 	<!-- End Sample Area -->
 	
 			
