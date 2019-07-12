@@ -7,6 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="../img/icon.png" type="image/png">
 	<title>URMentoring</title>
+
+
+  	
+    
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../css/bootstrap.css">
 
@@ -36,11 +40,11 @@
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
 							<li class="nav-item"><a class="nav-link" href="comoFunciona.html">Cómo funciona</a></li>
-							<li class="nav-item active"><a class="nav-link" href="novedades.html">Novedades</a></li>
+							<li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
 							<li class="nav-item"><a class="nav-link" href="sobreNosotros.html">Sobre nosotros</a></li>
 							<li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
 							<li class="nav-item"><a class="nav-link" href="login.html">Iniciar Sesión</a></li>
-							<li class="nav-item"><a href="buscador.html" class="nav-link search" id="search"><img src="../img/f-icons/search.png" alt=""></a></li>			
+							<li class="nav-item active"><a href="buscador.html" class="nav-link search" id="search"><img src="../img/f-icons/search.png" alt=""></a></li>			
 						</ul>
 
 
@@ -51,72 +55,38 @@
 	</header>
 	<!--================ End Header Menu Area =================-->
 	
-	<!--================ Blog Area =================-->
-<section class ="section_gap" id="news">
-	<div class="container">
-			<div id="titulon">
-			<h2>No te pierdas lo <span id="aprender" style="background-color: #39008b">último</span> de URMentoring</h2>
+	<!--================ Area de información =================-->
+	<section class="cont_nosotros section_gap">
+		<div class="banner_nosotros">
+			<div class="container">
+				<div class="row">
+						<div class="col justify-content-center text-center">
+							<div>
+							<h2>¿Qué estás buscando?</h2>
+							<hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 120px;">
+							<form class="form">
+								<input type="search" placeholder="Buscador" class="form-control" id="inputBuscar">		
+							</form>
+							</div>
+						</div>
+				</div>
 			</div>
+		</div>
+	</section>
 
-		<!--Carousel Wrapper-->
-<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-  <!--Indicators-->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-2" data-slide-to="1"></li>
-    <li data-target="#carousel-example-2" data-slide-to="2"></li>
-  </ol>
-  <!--/.Indicators-->
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <div class="view">
-        <img class="d-block w-100" src="../img/banner/f1.jpg"
-          alt="First slide">
-        <div class="mask rgba-black-light"></div>
-      </div>
-      <div class="carousel-caption">
-       <button class="primary-btn text-uppercase" id="verPrecios" type="submit">Ver planes</button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <!--Mask color-->
-      <div class="view">
-        <img class="d-block w-100" src="../img/banner/f2.jpg"
-          alt="Second slide">
-        <div class="mask rgba-black-strong"></div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <!--Mask color-->
-      <div class="view">
-        <img class="d-block w-100" src="../img/banner/f3.jpg"
-          alt="Second slide">
-        <div class="mask rgba-black-strong"></div>
-      </div>
-    </div>
-  </div>
-  <!--/.Slides-->
-  <!--Controls-->
-  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+		<div class="search_area">
+			<div class="busqueda" id="busqueda">
+          	<table class="search-tabla" id="searchTabla">
+            	<thead><tr><td></td></tr></thead>
+            <tbody id="tabla"></tbody>
+          	</table>
+        </div>
+        	<div class="resultados"></div>
+		</div>
 
-</div>
-
-</div>
-
-
- 		
-</section>
-
-	<!--================ End Blog Area =================-->
-
+	
+			
+    <!--================ End Header Menu Area =================-->
 
 	<!--================ Start footer Area  =================-->
 	<footer class="footer-area section_gap">
@@ -132,7 +102,7 @@
 					<h4>Nuestra empresa</h4>
 					<hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
 					<ul>
-						<li><a href="#">Acerca de nosotros</a></li>
+						<li><a href="sobreNosotros.html">Acerca de nosotros</a></li>
 						<li><a href="#">Políticas de privacidad</a></li>
 						<li><a href="#">Términos de servicio</a></li>
 					</ul>
@@ -160,7 +130,9 @@
 	<script src="../js/jquery-3.2.1.min.js"></script>
 	<script src="../js/popper.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
-
+  <script src="../js/jquery.dataTables.min.js"></script>
+	<script src="../js/buscador.js"></script>
+  <script src="../js/load.js"></script>
 </body>
 
 </html>
