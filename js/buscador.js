@@ -3,7 +3,6 @@ $("#inputBuscar").keyup(function () {
   consulta.search($(this).val()).draw();
 	if ($("#inputBuscar").val()==""){
 		$("#busqueda").hide();
-
 	} else {
 		$("#busqueda").fadeIn("fast");
   }
