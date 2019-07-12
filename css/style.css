@@ -4519,3 +4519,14 @@ background: #38b6ff;
 }
 
 /*=============== Fin Registrarse ====================*/
+
+/*================Terminos y condiciones=================*/
+
+.termCon{
+   background-color: #EEEEEE;
+}
+#mar{
+  margin-top: 20px;
+}
+
+/*==============fin Terminos y condiciones===============*/

@@ -112,13 +112,13 @@
 					<div class="form-row d-flex justify-content-center">	
 						<div class="form-group col-md-6">
 							<label for="formGroupExampleInput">Nombres</label>
-							<input type="text" class="form-control" id="formGroupExampleInput">
+							<input required type="text" class="form-control" id="formGroupExampleInput">
 						</div>
 					</div>
 					<div class="form-row d-flex justify-content-center">
 						<div class="form-group col-md-6">
 							<label for="formGroupExampleInput2">Apellidos</label>
-							<input type="text" class="form-control" id="formGroupExampleInput2">
+							<input required type="text" class="form-control" id="formGroupExampleInput2">
 						</div>
 					</div>
 
@@ -132,7 +132,7 @@
 									
 						<div class="form-group col-md-2">
 							<select id="dia" class="form-control">
-								<option selected>Día</option>
+								<option disabled selected>Día</option>
 							</select>
 						</div>
 									
@@ -140,13 +140,13 @@
 
 									<div class="form-group col-md-2">
 									      <select id="mes" class="form-control">
-									      	<option selected>Mes</option>
+									      	<option disabled  selected>Mes</option>
 									      </select>
 								    </div>
 
 									<div class="form-group col-md-2">
 									      <select id="anio" class="form-control">
-									        <option selected>Año</option>
+									        <option disabled selected>Año</option>
 									      </select>
 									</div>   
 
@@ -157,7 +157,6 @@
 									<div class="form-group col-md-6">
 									<label id="lugar">Lugar de Origen</label>
 										 <select id="pais" class="form-control">
-										      	<option selected>Uy Scuti</option>
 										  </select>
 									</div>
 
@@ -166,14 +165,14 @@
 								<div class="form-row d-flex justify-content-center">
 							  		<div class="form-group col-md-6">
 									    <label for="formGroupExampleInput2">Email</label>
-									    <input type="text" class="form-control" id="email">
+									    <input required type="text" class="form-control" id="email">
 							  		</div>
 								</div>
 
 								<div class="form-row d-flex justify-content-center">
 							  		<div class="form-group col-md-6">
 									    <label for="formGroupExampleInput2">Mensaje</label>
-									    <textarea class="form-control" id="detalle" rows="3"></textarea>
+									    <textarea required class="form-control" id="detalle" rows="3"></textarea>
 							  		</div>
 								</div>
 
@@ -245,6 +244,7 @@
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
 	<script src="../js/mymap.js"></script>
+	<script src="../js/loadOption.js"></script>
 </body>
 
 </html>
